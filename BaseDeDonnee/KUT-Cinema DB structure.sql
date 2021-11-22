@@ -15,7 +15,7 @@ DROP TABLE IF EXISTS `Tarif`;
 CREATE TABLE IF NOT EXISTS `Tarif` (
     `id_tarif` int (11) NOT NULL AUTO_INCREMENT,
     `nom` varchar (50) NOT NULL,
-    `prix_unitaire` int (5) NOT NULL,
+    `prix_unitaire` varchar (6) NOT NULL,
     `description` varchar (200) NOT NULL,
     PRIMARY KEY (`id_tarif`)
 );
