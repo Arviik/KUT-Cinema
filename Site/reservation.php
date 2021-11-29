@@ -1,6 +1,6 @@
 <?php
-$date = \DateTime())->format('Y-m-d H:i:s');
 session_start();
+$date = date("Y-m-d");
 $bdd = new PDO('mysql:host=localhost;dbname=kut-cinema;charset=utf8','root','');
 $req = $bdd->prepare('INSERT INTO reservation (nb_place_reservation,moyen_paiement,date_reservation,ref_client,ref_salle,ref_tarif) VALUES (:nb_place_reservation,:moyen_paiement,:date_reservation,:ref_client,:ref_salle,:ref_tarif);');
 $req->execute(array(
