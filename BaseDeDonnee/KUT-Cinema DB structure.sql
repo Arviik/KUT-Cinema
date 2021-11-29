@@ -7,6 +7,7 @@ CREATE TABLE IF NOT EXISTS `Client` (
     `id_client` int (11) NOT NULL AUTO_INCREMENT,
     `nom` varchar (50) NOT NULL,
     `prenom` varchar (50) NOT NULL,
+    `mot_de_passe` varchar (50) NOT NULL,
     `email` varchar (50) NOT NULL,
     PRIMARY KEY (`id_client`)
 );
