@@ -1,5 +1,5 @@
 <?php
-$bdd = new PDO('mysql:host=localhost;dbname=uby_testphp;charset=utf8','root','');
+$bdd = new PDO('mysql:host=localhost;dbname=kut-cinema;charset=utf8','root','');
 $req = $bdd->prepare('INSERT INTO client (nom,prenom,mot_de_passe,email) VALUES (:nom,:prenom,:mot_de_passe,:email);');
 $req->execute(array(
     "nom"=>$_POST['nom'],
