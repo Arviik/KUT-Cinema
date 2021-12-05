@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Connexion</title>
+    <title>Inscription</title>
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="assets/img/LogoKUTCinéma.png"/>
 </head>
@@ -11,9 +11,9 @@
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-lg-8 col-xl-6 text-center">
-                <h2 class="mt-0">Connexion</h2>
+                <h2 class="mt-0">Inscription</h2>
                 <hr class="divider" />
-                <p class="text-muted mb-5">Connecte toi et regarde les tout derniers film a l'affiche!!!!</p>
+                <p class="text-muted mb-5">Inscrit toi et regarde les tout derniers film a l'affiche!!!!</p>
             </div>
         </div>
         <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
@@ -25,12 +25,22 @@
                 <!-- To make this form functional, sign up at-->
                 <!-- https://startbootstrap.com/solution/contact-forms-->
                 <!-- to get an API token!-->
-                <form action="connexion.php" method="post">
+                <form action="inscription.php" method="post">
                     <!-- Name input-->
                     <div class="form-floating mb-3">
                         <input class="form-control" id="nom" type="text" placeholder="Nom" data-sb-validations="required" name="nom" />
                         <label for="nom">Nom</label>
                         <div class="invalid-feedback" data-sb-feedback="name:required">Un nom est demander</div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="prenom" type="text" placeholder="Prénom" data-sb-validations="required" name="prenom" />
+                        <label for="nom">Prénom</label>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">Un prénom est demander</div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="email" type="text" placeholder="E-Mail" data-sb-validations="required" name="email" />
+                        <label for="nom">E-Mail</label>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">Un e-mail est demander</div>
                     </div>
                     <!-- Email address input-->
 

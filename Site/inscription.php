@@ -7,4 +7,4 @@ $req->execute(array(
     "mot_de_passe"=>$_POST['password'],
     "email"=>$_POST['email'],
 ));
-header('Location: connexion.html');
+header('Location: index.php');
