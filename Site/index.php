@@ -34,7 +34,7 @@
                             if (isset($_SESSION['id_client'])){
                                 echo "<li class='nav-item'><a class='nav-link' href='connexion.html'>Bienvenue ".$_SESSION['nom']."</a></li>
                                       <li class='nav-item'><a class='nav-link' href='connexion.html'>Modifier profil</a></li>
-                                      <li class='nav-item'><a class='nav-link' href='#contact'>Déconnexion</a></li>";
+                                      <li class='nav-item'><a class='nav-link' href='deconnexion.php'>Déconnexion</a></li>";
                             }else{
                                 echo "<li class='nav-item'><a class='nav-link' href='connexion.html'>Connexion</a></li>
                                       <li class='nav-item'><a class='nav-link' href='inscription.html'>Inscription</a></li>";
