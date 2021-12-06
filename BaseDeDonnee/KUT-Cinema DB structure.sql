@@ -26,7 +26,8 @@ CREATE TABLE IF NOT EXISTS `Film` (
     `id_film` int (11) NOT NULL AUTO_INCREMENT,
     `titre` varchar (50) NOT NULL,
     `annee_sortie` varchar (11) NOT NULL,
-    `description` varchar (200) NOT NULL,
+    `description` varchar (500) NOT NULL,
+    `image_link` varchar (50) NOT NULL,
     PRIMARY KEY (`id_film`)
 );
 
@@ -35,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `Salle` (
     `id_salle` int (11) NOT NULL AUTO_INCREMENT,
     `nom` varchar (50) NOT NULL,
     `nb_place_salle` int (11) NOT NULL,
-    `ref_film` int (11) NOT NULL,
+    `ref_film` int (11),
     PRIMARY KEY (`id_salle`)
 );
 
