@@ -51,9 +51,9 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
-    // Activate SimpleLightbox plugin for portfolio items
+    // Activate SimpleLightbox plugin for affiche items
     new SimpleLightbox({
-        elements: '#portfolio a.portfolio-box'
+        elements: '#affiche a.affiche-box'
     });
 
 });

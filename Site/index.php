@@ -22,7 +22,9 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-1" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <img href="index.php" src="assets/img/LogoKUTCinéma.png" height="75" alt="Logo de KUT cinéma">
+                <a href="index.php">
+                    <img href="index.php" src="assets/img/LogoKUTCinéma.png" height="75" alt="Logo de KUT cinéma">
+                </a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
@@ -116,8 +118,8 @@
             <div class="container-fluid p-0">
                 <div class="row g-0">
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/Encanto.jpg" title="Encanto">
-                            <img class="img-fluid" src="assets/img/portfolio/Encanto.jpg" alt="..." />
+                        <a class="portfolio-box" href="assets/img/affiche/Encanto.jpg" title="Encanto">
+                            <img class="img-fluid" src="assets/img/affiche/Encanto.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">FILM</div>
                                 <div class="project-name">Encanto</div>
@@ -125,8 +127,8 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/sosfantome.jpg" title="SOS Fantome">
-                            <img class="img-fluid" src="assets/img/portfolio/sosfantome.jpg" alt="..." />
+                        <a class="portfolio-box" href="assets/img/affiche/sosfantome.jpg" title="SOS Fantome">
+                            <img class="img-fluid" src="assets/img/affiche/sosfantome.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">FILM</div>
                                 <div class="project-name">SOS Fantome</div>
@@ -134,8 +136,8 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/eternels.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/eternels.jpg" alt="..." />
+                        <a class="portfolio-box" href="assets/img/affiche/eternels.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/affiche/eternels.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">FILM</div>
                                 <div class="project-name">Eternels</div>
@@ -143,8 +145,8 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/gucci.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/gucci.jpg" alt="..." />
+                        <a class="portfolio-box" href="assets/img/affiche/gucci.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/affiche/gucci.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">FILM</div>
                                 <div class="project-name">House of gucci</div>
@@ -152,8 +154,8 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/Supremes.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/Supremes.jpg" alt="..." />
+                        <a class="portfolio-box" href="assets/img/affiche/Supremes.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/affiche/Supremes.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">FILM</div>
                                 <div class="project-name">Supremes</div>
@@ -161,8 +163,8 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/venom.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/portfolio/venom.jpg" alt="..." />
+                        <a class="portfolio-box" href="assets/img/affiche/venom.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/affiche/venom.jpg" alt="..." />
                             <div class="portfolio-box-caption p-3">
                                 <div class="project-category text-white-50">FILM</div>
                                 <div class="project-name">Venom</div>
