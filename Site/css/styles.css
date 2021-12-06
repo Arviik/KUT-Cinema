@@ -606,6 +606,13 @@ progress {
   margin-left: auto;
   margin-right: auto;
 }
+.img-fluidi {
+  width: 320px;
+  height: auto;
+  display: block;
+  margin-left: 50px;
+  margin-right: auto;
+}
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -894,7 +901,12 @@ progress {
 .gy-5 {
   --bs-gutter-y: 3rem;
 }
-
+.col-size{
+  width:150px;
+  height:25px;
+  border-radius:10px;
+  background:white ;
+}
 @media (min-width: 576px) {
   .col-sm {
     flex: 1 0 0%;
@@ -11309,6 +11321,11 @@ body {
   color: rgba(255, 255, 255, 0.75) !important;
 }
 
+.police {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
 .btn-xl {
   padding: 1.25rem 2.25rem;
   font-size: 0.85rem;
@@ -11391,7 +11408,9 @@ hr.divider-light {
     color: #f4623a;
   }
 }
+header.mastheade {
 
+}
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
