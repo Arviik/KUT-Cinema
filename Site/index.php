@@ -35,7 +35,7 @@
                             session_start();
                             if (isset($_SESSION['id_client'])){
                                 echo "<li class='nav-item'><a class='nav-link' href='connexion.html'>Bienvenue ".$_SESSION['nom']."</a></li>
-                                      <li class='nav-item'><a class='nav-link' href='connexion.html'>Modifier profil</a></li>
+                                      <li class='nav-item'><a class='nav-link' href='modification.php'>Modifier profil</a></li>
                                       <li class='nav-item'><a class='nav-link' href='deconnexion.php'>Déconnexion</a></li>";
                             }else{
                                 echo "<li class='nav-item'><a class='nav-link' href='connexion.html'>Connexion</a></li>
@@ -53,7 +53,7 @@
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-8 align-self-end">
-                        <h1 class="text-white font-weight-bold">Votre cinéma favoris</h1>
+                        <h1 class="text-white font-weight-bold">Votre cinéma favori !</h1>
                         <hr class="divider" />
                     </div>
                     <div class="col-lg-7 align-self-baseline">

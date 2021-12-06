@@ -8,6 +8,8 @@ $req->execute(array(
 $res = $req->fetch();
 if ($res){
     session_start();
+    $_SESSION['email']= $res['email'];
+    $_SESSION['prenom']= $res['prenom'];
     $_SESSION['nom'] = $res['nom'];
     $_SESSION['password'] = $res['mot_de_passe'];
     $_SESSION['id_client'] = $res['id_client'];
