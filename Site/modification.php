@@ -1,8 +1,10 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Connexion</title>
+    <title>Modification Profil</title>
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="assets/img/LogoKUTCinéma.png"/>
 </head>
@@ -18,39 +20,43 @@
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-lg-8 col-xl-6 text-center">
-                <h2 class="mt-0">Connexion</h2>
+                <h2 class="mt-0">Inscription</h2>
                 <hr class="divider" />
-                <p class="text-muted mb-5">Connecte toi et regarde les tout derniers film a l'affiche!!!!</p>
+                <p class="text-muted mb-5">Inscrit toi et regarde les tout derniers film a l'affiche!!!!</p>
             </div>
         </div>
         <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
             <div class="col-lg-6">
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
-                <form action="connexion.php" method="post">
+                <form action="actionmodification.php" method="post">
                     <!-- Name input-->
+                    <input name="id" type="text" <?php echo "value='".$_SESSION['id_client']."'"?> hidden>
                     <div class="form-floating mb-3">
-                        <input class="form-control" id="nom" type="text" placeholder="Nom" data-sb-validations="required" name="nom" />
+                        <input class="form-control" id="nom" type="text" placeholder="Nom" data-sb-validations="required" name="nom" <?php echo "value='".$_SESSION['nom']."'"?> />
                         <label for="nom">Nom</label>
                         <div class="invalid-feedback" data-sb-feedback="name:required">Un nom est demander</div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="prenom" type="text" placeholder="Prénom" data-sb-validations="required" name="prenom" <?php echo "value='".$_SESSION['prenom']."'"?> />
+                        <label for="nom">Prénom</label>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">Un prénom est demander</div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="email" type="text" placeholder="E-Mail" data-sb-validations="required" name="email" <?php echo "value='".$_SESSION['email']."'" ?> />
+                        <label for="nom">E-Mail</label>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">Un e-mail est demander</div>
                     </div>
                     <!-- Email address input-->
 
                     <!-- Phone number input-->
                     <div class="form-floating mb-3">
-                        <input class="form-control" id="mdp" type="password" placeholder="Mot de passe" data-sb-validations="required" name="password" />
+                        <input class="form-control" id="mdp" type="password" placeholder="Mot de passe" data-sb-validations="required" name="password" <?php echo "value='".$_SESSION['email']."'"?> />
                         <label for="mdp">Mot de passe</label>
                         <div class="invalid-feedback" data-sb-feedback="mdp:required">Mot de passe requis</div>
                     </div>
 
                     <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                     <!-- Submit Button-->
-                    <div class="d-grid"><button class="btn btn-primary btn-xl " id="submitButton" type="submit">Connexion</button></div>
+                    <div class="d-grid"><button class="btn btn-primary btn-xl " id="submitButton" type="submit">Modifier profil</button></div>
                 </form>
             </div>
         </div>
