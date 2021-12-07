@@ -6,4 +6,4 @@ $req->execute(array(
     "id_reservation"=>$_POST['id_reservation'],
     "ref_client"=>$_POST['ref_client'],
 ));
-header('Location: index.php');
+header('Location: ../index.php');

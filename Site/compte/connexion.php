@@ -13,7 +13,7 @@ if ($res){
     $_SESSION['nom'] = $res['nom'];
     $_SESSION['password'] = $res['mot_de_passe'];
     $_SESSION['id_client'] = $res['id_client'];
-    header('Location: index.php');
+    header('Location: ../index.php');
 }
 else{
     header('Location: connexion.html');

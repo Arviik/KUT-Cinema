@@ -7,7 +7,7 @@
     <meta name="author" content="" />
     <title>KUT Cinéma</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="/Site/assets/img/LogoKUTCinéma.png"/>
+    <link rel="icon" type="image/x-icon" href="../assets/img/LogoKUTCinéma.png"/>
     <!-- Bootstrap Icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Google fonts-->
@@ -16,13 +16,13 @@
     <!-- SimpleLightbox plugin CSS-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="/Site/css/styles.css" rel="stylesheet" />
+    <link href="../css/styles.css" rel="stylesheet" />
 </head>
 <body id="page-top">
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top py-1" id="mainNav">
     <div class="container px-4 px-lg-5">
-        <a href="/Site/index.php">
+        <a href="../index.php">
             <img href="/Site/index.php" src="../assets/img/LogoKUTCinéma.png" height="75" alt="Logo de KUT cinéma">
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -38,8 +38,8 @@
                                       <li class='nav-item'><a class='nav-link' href='/Site/compte/modification.php'>Modifier profil</a></li>
                                       <li class='nav-item'><a class='nav-link' href='/Site/compte/deconnexion.php'>Déconnexion</a></li>";
                 }else{
-                    echo "<li class='nav-item'><a class='nav-link' href='/Site/compte/connexion.html'>Connexion</a></li>
-                                      <li class='nav-item'><a class='nav-link' href='/Site/compte/inscription.html'>Inscription</a></li>";
+                    echo "<li class='nav-item'><a class='nav-link' href='../compte/connexion.html'>Connexion</a></li>
+                                      <li class='nav-item'><a class='nav-link' href='../compte/inscription.html'>Inscription</a></li>";
                 }
 
 
@@ -53,8 +53,8 @@
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
                 <div class="card">
-                    <img src="/Site/assets/img/image_bg/bg-encanto.jpg" class="m-0 rounded">
-                    <img src="/Site/assets/img/affiche/encanto.jpg" class="m-0" width="125" style="position: absolute; left: 5%; top: 30%">
+                    <img src="../assets/img/image_bg/bg-encanto.jpg" class="m-0 rounded">
+                    <img src="../assets/img/affiche/encanto.jpg" class="m-0" width="125" style="position: absolute; left: 5%; top: 30%">
                     <div class="card-body">
                         <table style="width: 100%">
                             <tr>
@@ -114,8 +114,8 @@
     <div class="container-fluid p-0">
         <div class="row g-0">
             <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="/Site/assets/img/affiche/encanto.jpg" title="Encanto">
-                    <img class="img-fluid" src="/Site/assets/img/affiche/encanto.jpg" alt="..." />
+                <a class="portfolio-box" href="../assets/img/affiche/encanto.jpg" title="Encanto">
+                    <img class="img-fluid" src="../assets/img/affiche/encanto.jpg" alt="..." />
                     <div class="portfolio-box-caption">
                         <div class="project-category text-white-50">FILM</div>
                         <div class="project-name">Encanto</div>
@@ -123,8 +123,8 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="/Site/assets/img/affiche/sosfantome.jpg" title="SOS Fantome">
-                    <img class="img-fluid" src="/Site/assets/img/affiche/sosfantome.jpg" alt="..." />
+                <a class="portfolio-box" href="../assets/img/affiche/sosfantome.jpg" title="SOS Fantome">
+                    <img class="img-fluid" src="../assets/img/affiche/sosfantome.jpg" alt="..." />
                     <div class="portfolio-box-caption">
                         <div class="project-category text-white-50">FILM</div>
                         <div class="project-name">SOS Fantome</div>
@@ -132,8 +132,8 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="/Site/assets/img/affiche/eternels.jpg" title="Project Name">
-                    <img class="img-fluid" src="/Site/assets/img/affiche/eternels.jpg" alt="..." />
+                <a class="portfolio-box" href="../assets/img/affiche/eternels.jpg" title="Project Name">
+                    <img class="img-fluid" src="../assets/img/affiche/eternels.jpg" alt="..." />
                     <div class="portfolio-box-caption">
                         <div class="project-category text-white-50">FILM</div>
                         <div class="project-name">Eternels</div>
@@ -141,8 +141,8 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="/Site/assets/img/affiche/gucci.jpg" title="Project Name">
-                    <img class="img-fluid" src="/Site/assets/img/affiche/gucci.jpg" alt="..." />
+                <a class="portfolio-box" href="../assets/img/affiche/gucci.jpg" title="Project Name">
+                    <img class="img-fluid" src="../assets/img/affiche/gucci.jpg" alt="..." />
                     <div class="portfolio-box-caption">
                         <div class="project-category text-white-50">FILM</div>
                         <div class="project-name">House of gucci</div>
@@ -150,8 +150,8 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="/Site/assets/img/affiche/supremes.jpg" title="Project Name">
-                    <img class="img-fluid" src="/Site/assets/img/affiche/supremes.jpg" alt="..." />
+                <a class="portfolio-box" href="../assets/img/affiche/supremes.jpg" title="Project Name">
+                    <img class="img-fluid" src="../assets/img/affiche/supremes.jpg" alt="..." />
                     <div class="portfolio-box-caption">
                         <div class="project-category text-white-50">FILM</div>
                         <div class="project-name">Supremes</div>
@@ -159,8 +159,8 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="/Site/assets/img/affiche/venom.jpg" title="Project Name">
-                    <img class="img-fluid" src="/Site/assets/img/affiche/venom.jpg" alt="..." />
+                <a class="portfolio-box" href="../assets/img/affiche/venom.jpg" title="Project Name">
+                    <img class="img-fluid" src="../assets/img/affiche/venom.jpg" alt="..." />
                     <div class="portfolio-box-caption p-3">
                         <div class="project-category text-white-50">FILM</div>
                         <div class="project-name">Venom</div>
@@ -256,7 +256,7 @@
 <footer class="bg-light py-5">
     <div class="d-flex justify-content-evenly">
         <a href="ajoutfilm.html" class="small text-muted">Ajout film</a>
-        <a href="/Site/salle/ajoutsalle.html" class="small text-muted">Ajout salle</a>
+        <a href="../salle/ajoutsalle.html" class="small text-muted">Ajout salle</a>
     </div>
 
     <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2021 - KUT Cinéma</div></div>
@@ -266,7 +266,7 @@
 <!-- SimpleLightbox plugin JS-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
 <!-- Core theme JS-->
-<script src="/Site/js/scripts.js"></script>
+<script src="../js/scripts.js"></script>
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
 <!-- * *                               SB Forms JS                               * *-->
 <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->

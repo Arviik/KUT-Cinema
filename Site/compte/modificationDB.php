@@ -14,4 +14,4 @@ $_SESSION['prenom']=$_POST['prenom'];
 $_SESSION['nom'] = $_POST['nom'];
 $_SESSION['password'] = $_POST['password'];
 $_SESSION['id_client'] = $_POST['id'];
-header('Location: index.php');
+header('Location: ../index.php');

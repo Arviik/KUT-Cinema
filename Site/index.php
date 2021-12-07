@@ -155,8 +155,6 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/affiche/supremes.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/affiche/supremes.jpg" alt="..." />
                         <a class="portfolio-box" href="film/affiche.php?id_film=5" title="Project Name">
                             <img class="img-fluid" src="assets/img/affiche/supremes.jpg" alt="..." />
                             <div class="portfolio-box-caption">
