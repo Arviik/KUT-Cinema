@@ -1,3 +1,24 @@
+<?php
+$id_film = $_GET["id_film"];
+$bdd = new PDO('mysql:host=localhost;dbname=kut-cinema;charset=utf8','root','');
+$req = $bdd->prepare('SELECT * FROM film WHERE id_film = :id');
+$req->execute(array(
+    "id"=>$id_film,
+));
+$res = $req->fetch();
+if ($res){
+    session_start();
+    $_SESSION['titre']= $res['titre'];
+    $_SESSION['annee_sortie']= $res['annee_sortie'];
+    $_SESSION['description'] = $res['description'];
+    $_SESSION['image_link'] = $res['image_link'];
+    $_SESSION['id_film'] = $res['id_film'];
+    $_SESSION['image_bg'] = $res['image_bg'];
+
+}
+else{
+    echo"marche pas";
+} ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -31,32 +52,27 @@
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#portfolio">Films</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                <?php
-                            session_start();
-                            if (isset($_SESSION['id_client'])){
-                                echo "<li class='nav-item'><a class='nav-link' href='connexion.html'>Bienvenue ".$_SESSION['nom']."</a></li>
-                <li class='nav-item'><a class='nav-link' href='connexion.html'>Modifier profil</a></li>
-                <li class='nav-item'><a class='nav-link' href='deconnexion.php'>Déconnexion</a></li>";
-                }else{
-                echo "<li class='nav-item'><a class='nav-link' href='connexion.html'>Connexion</a></li>
-                <li class='nav-item'><a class='nav-link' href='inscription.html'>Inscription</a></li>";
-                }
-
-
-                ?>
             </ul>
         </div>
     </div>
 </nav>
 <!-- Masthead-->
-<header class="mastheade" style="background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url('assets/img/bg-encanto.jpg'); padding-top: 10rem; padding-bottom: calc(10rem - 4.5rem);background-position: center;background-repeat: no-repeat;background-attachment: scroll;background-size: cover;">
+<?php
+if (isset($_SESSION['id_film'])){
+    echo " <header class='mastheade' style='background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(".$_SESSION['image_bg']. ");
+     padding-top: 10rem; padding-bottom: calc(10rem - 4.5rem);background-position: center;background-repeat: no-repeat;background-attachment: scroll;background-size: cover;'>";
+}?>
     <div class="container px-4 px-lg-5 h-100">
         <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content text-center">
+                <?php
+                            if (isset($_SESSION['id_film'])){
+                                echo "<div class='col-lg-4 col-sm-6'>
+                                      <a class='portfolio-box' href='assets/img/affiche/Encanto.jpg' title='Encanto'>
+                                      <img class='img-fluidi' src=" . $_SESSION['image_link']. " alt='...' /></a>
+                                      </div>";
+                                }?>
 
-            <div class="col-lg-4 col-sm-6">
-                <a class="portfolio-box" href="assets/img/affiche/Encanto.jpg" title="Encanto">
-                    <img class="img-fluidi" src="assets/img/affiche/Encanto.jpg" alt="..." /></a>
-            </div>
+
         </div>
 
         </div>
@@ -67,23 +83,30 @@
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content">
             <div class="col-lg-6 col-md-9 text">
+                <?php
+                if (isset($_SESSION['id_film'])){
+                    echo "<p class= 'text-white-75 mb-3'>Genre : Animation, comédie, Famille, fantastique</br>
 
-                <p class="text-white-75 mb-3">Genre : Animation, comédie, Famille, fantastique</br>
+                    Titre original : " . $_SESSION['titre']. "</br>
 
-                    Titre original : Encanto</br>
-
-                    Date de sortie : 24/11/2021</br>
+                    Date de sortie : " . $_SESSION['annee_sortie']. "</br>
 
                     Réalisé par Charise Castro Smith, Byron Howard, Jared Bush</br>
 
                     Durée : 1h43.</br>
 
-                    Avec Camille Timmerman, José Garcia, Juan Arbelaez, Dominique Quesnel, Julián Andrés Ortiz Cardona</p>
+                    Avec Camille Timmerman, José Garcia, Juan Arbelaez, Dominique Quesnel, Julián Andrés Ortiz Cardona</p>";
+                }?>
+
                 <a class="btn btn-light btn-xl" href="#services" >Acheter vos place</a>
             </div>
             <div class="col-lg-6 col-md-9 text">
                 <div class="col-size text-center"><p class="police">Synopsis</p></div>
-                <p class="text-white-75 mb-3">[Entrer le synopsis avec php]</p>
+                <?php
+                if (isset($_SESSION['id_film'])){
+                    echo "<p class='text-white-75 mb-3'>" . $_SESSION['description']. "</p>";
+                }?>
+
 
             </div>
         </div>

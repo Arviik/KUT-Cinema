@@ -114,11 +114,12 @@
             </div>
         </section>
         <!-- Films-->
+        <form method="post" action="affiche.php"></form>
         <div id="portfolio">
             <div class="container-fluid p-0">
                 <div class="row g-0">
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/affiche/Encanto.jpg" title="Encanto">
+                        <a class="portfolio-box" href="affiche.php?id_film=1" title="Encanto">
                             <img class="img-fluid" src="assets/img/affiche/Encanto.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">FILM</div>
@@ -127,7 +128,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/affiche/sosfantome.jpg" title="SOS Fantome">
+                        <a class="portfolio-box" href="affiche.php?id_film=2" title="SOS Fantome">
                             <img class="img-fluid" src="assets/img/affiche/sosfantome.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">FILM</div>
@@ -136,7 +137,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/affiche/eternels.jpg" title="Project Name">
+                        <a class="portfolio-box" href=affiche.php?id_film=3" title="Project Name">
                             <img class="img-fluid" src="assets/img/affiche/eternels.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">FILM</div>
@@ -145,7 +146,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/affiche/gucci.jpg" title="Project Name">
+                        <a class="portfolio-box" href="affiche.php?id_film=4" title="Project Name">
                             <img class="img-fluid" src="assets/img/affiche/gucci.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">FILM</div>
@@ -154,7 +155,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/affiche/Supremes.jpg" title="Project Name">
+                        <a class="portfolio-box" href="affiche.php?id_film=5" title="Project Name">
                             <img class="img-fluid" src="assets/img/affiche/Supremes.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">FILM</div>
@@ -163,7 +164,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/affiche/venom.jpg" title="Project Name">
+                        <a class="portfolio-box" href="affiche.php?id_film=6" title="Project Name">
                             <img class="img-fluid" src="assets/img/affiche/venom.jpg" alt="..." />
                             <div class="portfolio-box-caption p-3">
                                 <div class="project-category text-white-50">FILM</div>
