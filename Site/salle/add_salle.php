@@ -6,4 +6,4 @@ $req->execute(array(
     "nom"=>$_POST['nom'],
     "nb_place_salle"=>$_POST['nb_place_salle'],
 ));
-header('Location: index.php');
+header('Location: ../index.php');

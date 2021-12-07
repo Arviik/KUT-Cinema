@@ -6,7 +6,7 @@ $req->execute(array(
     "titre"=>$_POST['titre'],
     "annee_sortie"=>$_POST['annee_sortie'],
     "description"=>$_POST['description'],
-    "image_link"=>"assets/img/affiche/eternels.jpg",
-    "image_bg"=>"assets/img/image_bg/bg-eternels.jpg"
+    "image_link"=>"../assets/img/affiche/eternels.jpg",
+    "image_bg"=>"../assets/img/image_bg/bg-eternels.jpg"
 ));
 header('Location: ../index.php');

@@ -68,7 +68,7 @@ if (isset($_SESSION['id_film'])){
                             if (isset($_SESSION['id_film'])){
                                 echo "<div class='col-lg-4 col-sm-6'>
                                       <a class='portfolio-box' href='/Site/assets/img/affiche/encanto.jpg' title='Encanto'>
-                                      <img class='img-fluidi' src=" . $_SESSION['image_link']. " alt='...' /></a>
+                                      <img class='img-fluidi' src='" . $_SESSION['image_link']. "' alt='...' /></a>
                                       </div>";
                                 }?>
 

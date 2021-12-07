@@ -28,7 +28,7 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li  class="nav-item"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#portfolio">Films</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 <?php
@@ -41,8 +41,6 @@
                     echo "<li class='nav-item'><a class='nav-link' href='../compte/connexion.html'>Connexion</a></li>
                                       <li class='nav-item'><a class='nav-link' href='../compte/inscription.html'>Inscription</a></li>";
                 }
-
-
                 ?>
             </ul>
         </div>
@@ -54,13 +52,13 @@
             <div class="col">
                 <div class="card">
                     <img src="../assets/img/image_bg/bg-encanto.jpg" class="m-0 rounded">
-                    <img src="../assets/img/affiche/encanto.jpg" class="m-0" width="125" style="position: absolute; left: 5%; top: 30%">
+                    <img src="../assets/img/affiche/encanto.jpg" class="m-0" width="125" style="position: absolute; left: 7%; top: 40%; border: 1px black solid; border-radius: 5px;">
                     <div class="card-body">
                         <table style="width: 100%">
                             <tr>
-                                <td style="width: 50%;"></td>
-                                <td style="width: 50%;">
-                                    <h5 class="m-0">Titre</h5>
+                                <td style="width: 40%;"></td>
+                                <td style="width: 60%;">
+                                    <h5 class="m-0">LOREM IPSUM</h5>
                                     <p class="small m-0">1999</p>
                                 </td>
                             </tr>
@@ -189,13 +187,6 @@
         </div>
         <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
             <div class="col-lg-6">
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
                 <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                     <!-- Name input-->
                     <div class="form-floating mb-3">
