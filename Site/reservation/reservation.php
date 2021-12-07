@@ -5,14 +5,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Reserver place</title>
-    <link href="css/styles.css" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="assets/img/LogoKUTCinéma.png"/>
+    <link href="/Site/css/styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/Site/assets/img/LogoKUTCinéma.png"/>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light fixed-top py-1" id="mainNav">
     <div class="container px-4 px-lg-5">
-        <a href="index.php">
-            <img href="index.php" src="assets/img/LogoKUTCinéma.png" height="75" alt="Logo de KUT cinéma">
+        <a href="/Site/index.php">
+            <img href="index.php" src="/Site/assets/img/LogoKUTCinéma.png" height="75" alt="Logo de KUT cinéma">
         </a>
     </div>
 </nav>
@@ -27,7 +27,7 @@
         </div>
         <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
             <div class="col-lg-6">
-                <form action="reservationDB.php" method="post">
+                <form action="/Site/reservation/reservationDB.php" method="post">
                     <input name="id" type="text" <?php echo "value='".$_SESSION['id_client']."'"?> hidden>
                     <div class="form-floating mb-3">
                         <select id="salle" class="form-select" name="salle">

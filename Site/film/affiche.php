@@ -28,7 +28,7 @@ else{
     <meta name="author" content="" />
     <title>KUT Cinéma</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/img/LogoKUTCinéma.png"/>
+    <link rel="icon" type="image/x-icon" href="/Site/assets/img/LogoKUTCinéma.png"/>
     <!-- Bootstrap Icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Google fonts-->
@@ -37,14 +37,14 @@ else{
     <!-- SimpleLightbox plugin CSS-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="/Site/css/styles.css" rel="stylesheet" />
 </head>
 <body id="page-top">
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top py-1" id="mainNav">
     <div class="container px-4 px-lg-5">
-        <a href="index.php">
-            <img href="index.php" src="assets/img/LogoKUTCinéma.png" height="75" alt="Logo de KUT cinéma">
+        <a href="/Site/index.php">
+            <img href="index.php" src="/Site/assets/img/LogoKUTCinéma.png" height="75" alt="Logo de KUT cinéma">
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -67,7 +67,7 @@ if (isset($_SESSION['id_film'])){
                 <?php
                             if (isset($_SESSION['id_film'])){
                                 echo "<div class='col-lg-4 col-sm-6'>
-                                      <a class='portfolio-box' href='assets/img/affiche/Encanto.jpg' title='Encanto'>
+                                      <a class='portfolio-box' href='/Site/assets/img/affiche/encanto.jpg' title='Encanto'>
                                       <img class='img-fluidi' src=" . $_SESSION['image_link']. " alt='...' /></a>
                                       </div>";
                                 }?>
@@ -159,7 +159,7 @@ if (isset($_SESSION['id_film'])){
 <!-- SimpleLightbox plugin JS-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
 <!-- Core theme JS-->
-<script src="js/scripts.js"></script>
+<script src="/Site/js/scripts.js"></script>
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
 <!-- * *                               SB Forms JS                               * *-->
 <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->

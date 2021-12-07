@@ -34,12 +34,12 @@
                         <?php
                             session_start();
                             if (isset($_SESSION['id_client'])){
-                                echo "<li class='nav-item'><a class='nav-link' href='connexion.html'>Bienvenue ".$_SESSION['prenom']."</a></li>
-                                      <li class='nav-item'><a class='nav-link' href='modification.php'>Modifier profil</a></li>
-                                      <li class='nav-item'><a class='nav-link' href='deconnexion.php'>Déconnexion</a></li>";
+                                echo "<li class='nav-item'><a class='nav-link' href='compte/connexion.html'>Bienvenue " .$_SESSION['prenom']. "</a></li>
+                                      <li class='nav-item'><a class='nav-link' href='compte/modification.php'>Modifier profil</a></li>
+                                      <li class='nav-item'><a class='nav-link' href='compte/deconnexion.php'>Déconnexion</a></li>";
                             }else{
-                                echo "<li class='nav-item'><a class='nav-link' href='connexion.html'>Connexion</a></li>
-                                      <li class='nav-item'><a class='nav-link' href='inscription.html'>Inscription</a></li>";
+                                echo "<li class='nav-item'><a class='nav-link' href='compte/connexion.html'>Connexion</a></li>
+                                      <li class='nav-item'><a class='nav-link' href='compte/inscription.html'>Inscription</a></li>";
                             }
 
 
@@ -114,13 +114,13 @@
             </div>
         </section>
         <!-- Films-->
-        <form method="post" action="affiche.php"></form>
+        <form method="post" action="film/affiche.php"></form>
         <div id="portfolio">
             <div class="container-fluid p-0">
                 <div class="row g-0">
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="affiche.php?id_film=1" title="Encanto">
-                            <img class="img-fluid" src="assets/img/affiche/Encanto.jpg" alt="..." />
+                        <a class="portfolio-box" href="film/affiche.php?id_film=1" title="Encanto">
+                            <img class="img-fluid" src="assets/img/affiche/encanto.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">FILM</div>
                                 <div class="project-name">Encanto</div>
@@ -128,7 +128,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="affiche.php?id_film=2" title="SOS Fantome">
+                        <a class="portfolio-box" href="film/affiche.php?id_film=2" title="SOS Fantome">
                             <img class="img-fluid" src="assets/img/affiche/sosfantome.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">FILM</div>
@@ -137,7 +137,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href=affiche.php?id_film=3" title="Project Name">
+                        <a class="portfolio-box" href=film/affiche.php?id_film=3" title="Project Name">
                             <img class="img-fluid" src="assets/img/affiche/eternels.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">FILM</div>
@@ -146,7 +146,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="affiche.php?id_film=4" title="Project Name">
+                        <a class="portfolio-box" href="film/affiche.php?id_film=4" title="Project Name">
                             <img class="img-fluid" src="assets/img/affiche/gucci.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">FILM</div>
@@ -157,8 +157,8 @@
                     <div class="col-lg-4 col-sm-6">
                         <a class="portfolio-box" href="assets/img/affiche/supremes.jpg" title="Project Name">
                             <img class="img-fluid" src="assets/img/affiche/supremes.jpg" alt="..." />
-                        <a class="portfolio-box" href="affiche.php?id_film=5" title="Project Name">
-                            <img class="img-fluid" src="assets/img/affiche/Supremes.jpg" alt="..." />
+                        <a class="portfolio-box" href="film/affiche.php?id_film=5" title="Project Name">
+                            <img class="img-fluid" src="assets/img/affiche/supremes.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">FILM</div>
                                 <div class="project-name">Supremes</div>
@@ -166,7 +166,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="affiche.php?id_film=6" title="Project Name">
+                        <a class="portfolio-box" href="film/affiche.php?id_film=6" title="Project Name">
                             <img class="img-fluid" src="assets/img/affiche/venom.jpg" alt="..." />
                             <div class="portfolio-box-caption p-3">
                                 <div class="project-category text-white-50">FILM</div>
@@ -262,8 +262,8 @@
         <!-- Footer-->
         <footer class="bg-light py-5">
             <div class="d-flex justify-content-evenly">
-                <a href="ajoutfilm.html" class="small text-muted">Ajout film</a>
-                <a href="ajoutsalle.html" class="small text-muted">Ajout salle</a>
+                <a href="film/ajoutfilm.html" class="small text-muted">Ajout film</a>
+                <a href="salle/ajoutsalle.html" class="small text-muted">Ajout salle</a>
             </div>
 
             <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2021 - KUT Cinéma</div></div>
