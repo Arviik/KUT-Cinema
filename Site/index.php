@@ -34,7 +34,7 @@
                         <?php
                             session_start();
                             if (isset($_SESSION['id_client'])){
-                                echo "<li class='nav-item'><a class='nav-link' href='connexion.html'>Bienvenue ".$_SESSION['nom']."</a></li>
+                                echo "<li class='nav-item'><a class='nav-link' href='connexion.html'>Bienvenue ".$_SESSION['prenom']."</a></li>
                                       <li class='nav-item'><a class='nav-link' href='modification.php'>Modifier profil</a></li>
                                       <li class='nav-item'><a class='nav-link' href='deconnexion.php'>Déconnexion</a></li>";
                             }else{
@@ -155,6 +155,8 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/affiche/supremes.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/affiche/supremes.jpg" alt="..." />
                         <a class="portfolio-box" href="affiche.php?id_film=5" title="Project Name">
                             <img class="img-fluid" src="assets/img/affiche/Supremes.jpg" alt="..." />
                             <div class="portfolio-box-caption">
@@ -259,7 +261,12 @@
         </section>
         <!-- Footer-->
         <footer class="bg-light py-5">
-            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2021 - Company Name</div></div>
+            <div class="d-flex justify-content-evenly">
+                <a href="ajoutfilm.html" class="small text-muted">Ajout film</a>
+                <a href="ajoutsalle.html" class="small text-muted">Ajout salle</a>
+            </div>
+
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2021 - KUT Cinéma</div></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

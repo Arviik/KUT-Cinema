@@ -27,7 +27,7 @@
         </div>
         <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
             <div class="col-lg-6">
-                <form action="actionmodification.php" method="post">
+                <form action="modificationDB.php" method="post">
                     <!-- Name input-->
                     <input name="id" type="text" <?php echo "value='".$_SESSION['id_client']."'"?> hidden>
                     <div class="form-floating mb-3">
