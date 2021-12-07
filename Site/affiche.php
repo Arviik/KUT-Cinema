@@ -49,7 +49,7 @@
     </div>
 </nav>
 <!-- Masthead-->
-<header class="mastheade" style="background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url('assets/img/bg-encanto.jpg'); padding-top: 10rem; padding-bottom: calc(10rem - 4.5rem);background-position: center;background-repeat: no-repeat;background-attachment: scroll;background-size: cover;">
+<header class="mastheade" style="background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url('assets/img/affiche/bg-encanto.jpg'); padding-top: 10rem; padding-bottom: calc(10rem - 4.5rem);background-position: center;background-repeat: no-repeat;background-attachment: scroll;background-size: cover;">
     <div class="container px-4 px-lg-5 h-100">
         <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content text-center">
 
