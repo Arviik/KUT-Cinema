@@ -28,6 +28,7 @@ CREATE TABLE IF NOT EXISTS `Film` (
     `annee_sortie` varchar (11) NOT NULL,
     `description` varchar (500) NOT NULL,
     `image_link` varchar (50) NOT NULL,
+	`image_bg` varchar (50) NOT NULL,
     PRIMARY KEY (`id_film`)
 );
 
