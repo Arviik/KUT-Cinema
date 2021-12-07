@@ -25,13 +25,6 @@
     </div>
     <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
       <div class="col-lg-6">
-        <!-- * * * * * * * * * * * * * * *-->
-        <!-- * * SB Forms Contact Form * *-->
-        <!-- * * * * * * * * * * * * * * *-->
-        <!-- This form is pre-integrated with SB Forms.-->
-        <!-- To make this form functional, sign up at-->
-        <!-- https://startbootstrap.com/solution/contact-forms-->
-        <!-- to get an API token!-->
         <form action="add_salle.php" method="post">
           <!-- Name input-->
           <div class="form-floating mb-3">
@@ -62,6 +55,5 @@
 <footer class="bg-light py-5">
   <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2021 - KUT-Cinema</div></div>
 </footer>
-
 </body>
 </html>

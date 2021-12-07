@@ -34,7 +34,7 @@
                         <?php
                             session_start();
                             if (isset($_SESSION['id_client'])){
-                                echo "<li class='nav-item'><a class='nav-link' href='connexion.html'>Bienvenue ".$_SESSION['nom']."</a></li>
+                                echo "<li class='nav-item'><a class='nav-link' href='connexion.html'>Bienvenue ".$_SESSION['prenom']."</a></li>
                                       <li class='nav-item'><a class='nav-link' href='modification.php'>Modifier profil</a></li>
                                       <li class='nav-item'><a class='nav-link' href='deconnexion.php'>Déconnexion</a></li>";
                             }else{
@@ -118,8 +118,8 @@
             <div class="container-fluid p-0">
                 <div class="row g-0">
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/affiche/Encanto.jpg" title="Encanto">
-                            <img class="img-fluid" src="assets/img/affiche/Encanto.jpg" alt="..." />
+                        <a class="portfolio-box" href="assets/img/affiche/encanto.jpg" title="Encanto">
+                            <img class="img-fluid" src="assets/img/affiche/encanto.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">FILM</div>
                                 <div class="project-name">Encanto</div>
@@ -154,8 +154,8 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/affiche/Supremes.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/affiche/Supremes.jpg" alt="..." />
+                        <a class="portfolio-box" href="assets/img/affiche/supremes.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/affiche/supremes.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">FILM</div>
                                 <div class="project-name">Supremes</div>
@@ -258,7 +258,7 @@
         </section>
         <!-- Footer-->
         <footer class="bg-light py-5">
-            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2021 - Company Name</div></div>
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2021 - KUT Cinéma</div></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
