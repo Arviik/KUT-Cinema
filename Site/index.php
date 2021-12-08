@@ -119,7 +119,7 @@
             <div class="container-fluid p-0">
                 <div class="row g-0">
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="film/affiche.php?id_film=1" title="Encanto">
+                        <a class="portfolio-box" href="film/affiche.php?id_film=2" title="Encanto">
                             <img class="img-fluid" src="assets/img/affiche/encanto.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">FILM</div>
@@ -128,7 +128,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="film/affiche.php?id_film=2" title="SOS Fantome">
+                        <a class="portfolio-box" href="film/affiche.php?id_film=3" title="SOS Fantome">
                             <img class="img-fluid" src="assets/img/affiche/sosfantome.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">FILM</div>
@@ -137,7 +137,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href=film/affiche.php?id_film=3" title="Project Name">
+                        <a class="portfolio-box" href=film/affiche.php?id_film=4" title="Project Name">
                             <img class="img-fluid" src="assets/img/affiche/eternels.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">FILM</div>
@@ -146,7 +146,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="film/affiche.php?id_film=4" title="Project Name">
+                        <a class="portfolio-box" href="film/affiche.php?id_film=5" title="Project Name">
                             <img class="img-fluid" src="assets/img/affiche/gucci.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">FILM</div>
@@ -155,7 +155,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="film/affiche.php?id_film=5" title="Project Name">
+                        <a class="portfolio-box" href="film/affiche.php?id_film=6" title="Project Name">
                             <img class="img-fluid" src="assets/img/affiche/supremes.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">FILM</div>
@@ -164,7 +164,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="film/affiche.php?id_film=6" title="Project Name">
+                        <a class="portfolio-box" href="film/affiche.php?id_film=7" title="Project Name">
                             <img class="img-fluid" src="assets/img/affiche/venom.jpg" alt="..." />
                             <div class="portfolio-box-caption p-3">
                                 <div class="project-category text-white-50">FILM</div>
@@ -261,10 +261,11 @@
         <footer class="bg-light py-5">
             <div class="d-flex justify-content-evenly">
                 <a href="film/ajoutfilm.html" class="small text-muted">Ajout film</a>
-                <a href="salle/ajoutsalle.html" class="small text-muted">Ajout salle</a>
+                <a href="salle/add_salle.html" class="small text-muted">Ajout salle</a>
             </div>
-
-            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2021 - KUT Cinéma</div></div>
+            <div class="container px-4 px-lg-5">
+                <div class="small text-center text-muted">Copyright &copy; 2021 - KUT Cinéma</div>
+            </div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
