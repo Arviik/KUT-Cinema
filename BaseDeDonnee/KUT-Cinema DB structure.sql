@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `Salle` (
     `id_salle` int (11) NOT NULL AUTO_INCREMENT,
     `nom` varchar (50) NOT NULL,
     `nb_place_salle` int (11) NOT NULL,
-    `ref_film` int (11),
+    `ref_film` int (11) NOT NULL,
     PRIMARY KEY (`id_salle`)
 );
 

@@ -247,7 +247,7 @@
 <footer class="bg-light py-5">
     <div class="d-flex justify-content-evenly">
         <a href="ajoutfilm.html" class="small text-muted">Ajout film</a>
-        <a href="../salle/ajoutsalle.html" class="small text-muted">Ajout salle</a>
+        <a href="../salle/add_salle.html" class="small text-muted">Ajout salle</a>
     </div>
 
     <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2021 - KUT Cinéma</div></div>

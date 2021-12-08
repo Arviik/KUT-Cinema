@@ -14,11 +14,10 @@ if ($res){
     $_SESSION['image_link'] = $res['image_link'];
     $_SESSION['id_film'] = $res['id_film'];
     $_SESSION['image_bg'] = $res['image_bg'];
-
 }
 else{
     echo"marche pas";
-} ?>
+}?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -50,8 +49,6 @@ else{
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto my-2 my-lg-0">
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#portfolio">Films</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -64,17 +61,14 @@ if (isset($_SESSION['id_film'])){
 }?>
     <div class="container px-4 px-lg-5 h-100">
         <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content text-center">
-                <?php
-                            if (isset($_SESSION['id_film'])){
-                                echo "<div class='col-lg-4 col-sm-6'>
-                                      <a class='portfolio-box' href='/Site/assets/img/affiche/encanto.jpg' title='Encanto'>
-                                      <img class='img-fluidi' src='" . $_SESSION['image_link']. "' alt='...' /></a>
-                                      </div>";
-                                }?>
-
-
+            <?php
+                if (isset($_SESSION['id_film'])){
+                    echo "<div class='col-lg-4 col-sm-6'>
+                          <a class='portfolio-box' href='/Site/assets/img/affiche/encanto.jpg' title='Encanto'>
+                          <img class='img-fluidi' src='" . $_SESSION['image_link']. "' alt='...' /></a>
+                          </div>";
+                }?>
         </div>
-
         </div>
 <!-- About-->
 <section class="page-section bg-primary" id="about">
@@ -83,7 +77,8 @@ if (isset($_SESSION['id_film'])){
             <div class="col-lg-6 col-md-9 text">
                 <?php
                 if (isset($_SESSION['id_film'])){
-                    echo "<p class= 'text-white-75 mb-3'>Genre : Animation, comédie, Famille, fantastique</br>
+                    echo "<p class= 'text-white-75 mb-3'>
+                    Genre : Animation, comédie, Famille, fantastique</br>
 
                     Titre original : " . $_SESSION['titre']. "</br>
 
@@ -95,7 +90,6 @@ if (isset($_SESSION['id_film'])){
 
                     Avec Camille Timmerman, José Garcia, Juan Arbelaez, Dominique Quesnel, Julián Andrés Ortiz Cardona</p>";
                 }?>
-
                 <a class="btn btn-light btn-xl" href="#services" >Acheter vos place</a>
             </div>
             <div class="col-lg-6 col-md-9 text">
