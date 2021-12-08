@@ -38,17 +38,17 @@
                     <div class="col-lg-6">
                         <form action="updateDB.php" method="post">
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="nom" type="text" placeholder="Nom" data-sb-validations="required" name="nom" />
+                                <input class="form-control" id="nom" type="text" value="<?php echo $res1['nom'] ?>" placeholder="Nom" data-sb-validations="required" name="nom" />
                                 <label for="nom">Nom</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">Un nom est demander</div>
                             </div>
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="nb_place_salle" type="text" placeholder="Nombre de place" data-sb-validations="required" name="nb_place_salle" />
+                                <input class="form-control" id="nb_place_salle" type="text" value="<?php echo $res1['nb_place_salle'] ?>" placeholder="Nombre de place" data-sb-validations="required" name="nb_place_salle" />
                                 <label for="nb_place_salle">Nombre de place</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">Le nombre de place est demander</div>
                             </div>
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="ref_film" type="text" placeholder="Film diffusé" name="ref_film" />
+                                <input class="form-control" id="ref_film" type="text" value="<?php echo $res1['ref_film'] ?>" placeholder="Film diffusé" name="ref_film" />
                                 <label for="ref_film">id du Film diffusé</label>
                             </div>
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
@@ -67,10 +67,8 @@
         <footer class="bg-light py-5">
             <div class="d-flex justify-content-evenly">
                 <a href="../film/ajoutfilm.html" class="small text-muted">Ajout film</a>
-                <a href="../salle/add_salle.html" class="small text-muted">Ajout salle</a>
-            </div>
-            <div class="container px-4 px-lg-5">
                 <div class="small text-center text-muted">Copyright &copy; 2021 - KUT Cinéma</div>
+                <a href="../salle/add_salle.html" class="small text-muted">Ajout salle</a>
             </div>
         </footer>
     </body>

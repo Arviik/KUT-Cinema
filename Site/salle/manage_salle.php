@@ -95,7 +95,7 @@
             <div class="d-flex justify-content-evenly">
                 <a href="../film/ajoutfilm.html" class="small text-muted">Ajout film</a>
                 <div class="small text-center text-muted">Copyright &copy; 2021 - KUT Cinéma</div>
-                <a href="add_salle.html" class="small text-muted">Ajout salle</a>
+                <a href="../salle/add_salle.html" class="small text-muted">Ajout salle</a>
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
