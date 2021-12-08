@@ -254,7 +254,7 @@ $res = $req->fetchall();
 <!-- Footer-->
 <footer class="bg-light py-5">
     <div class="d-flex justify-content-evenly">
-        <a href="ajoutfilm.html" class="small text-muted">Ajout film</a>
+        <a href="add_film.html" class="small text-muted">Ajout film</a>
         <a href="../salle/add_salle.html" class="small text-muted">Ajout salle</a>
     </div>
 

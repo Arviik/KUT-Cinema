@@ -93,7 +93,7 @@
         </section>
         <footer class="bg-light py-5">
             <div class="d-flex justify-content-evenly">
-                <a href="../film/ajoutfilm.html" class="small text-muted">Ajout film</a>
+                <a href="../film/add_film.html" class="small text-muted">Ajout film</a>
                 <div class="small text-center text-muted">Copyright &copy; 2021 - KUT Cinéma</div>
                 <a href="../salle/add_salle.html" class="small text-muted">Ajout salle</a>
             </div>
