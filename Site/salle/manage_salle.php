@@ -75,8 +75,10 @@
                                                     <td style='width: 60%;'>
                                                         <h5 class='m-0'>".$val['nom']."</h5>
                                                         <p class='small m-0'>Place : ".$val['nb_place_salle']."</p>
-                                                        <a class='small m-0' href='update_salle.php?id_salle=".$val['id_salle']."'>Modifier</a>
-                                                        <a class='small m-0' href='delete_salle.php?id_salle=".$val['id_salle']."'>Supprimer</a>
+                                                        <div class='d-grid gap-2 d-md-flex'>
+                                                            <a class='btn btn-primary btn-sm' role='button' style='width: 48%;' href='update_salle.php?id_salle=".$val['id_salle']."'>Modifier</a>
+                                                            <a class='btn btn-primary btn-sm' role='button' style='width: 48%;' href='delete_salle.php?id_salle=".$val['id_salle']."'>Supprimer</a>
+                                                        </div>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -92,10 +94,8 @@
         <footer class="bg-light py-5">
             <div class="d-flex justify-content-evenly">
                 <a href="../film/ajoutfilm.html" class="small text-muted">Ajout film</a>
-                <a href="add_salle.html" class="small text-muted">Ajout salle</a>
-            </div>
-            <div class="container px-4 px-lg-5">
                 <div class="small text-center text-muted">Copyright &copy; 2021 - KUT Cinéma</div>
+                <a href="add_salle.html" class="small text-muted">Ajout salle</a>
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
