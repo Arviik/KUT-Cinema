@@ -1,3 +1,9 @@
+<?php
+$bdd = new PDO('mysql:host=localhost;dbname=kut-cinema;charset=utf8', 'root', '');
+$req = $bdd->query('SELECT * FROM film');
+$res = $req->fetchall();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -20,7 +26,7 @@
 </head>
 <body id="page-top">
 <!-- Navigation-->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top py-1" id="mainNav">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top py-1" id="mainNavListe">
     <div class="container px-4 px-lg-5">
         <a href="../index.php">
             <img href="/Site/index.php" src="../assets/img/LogoKUTCinéma.png" height="75" alt="Logo de KUT cinéma">
@@ -49,23 +55,25 @@
 <section class="page-section">
     <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <?php foreach ($res as $film): ?>
             <div class="col">
                 <div class="card">
-                    <img src="../assets/img/image_bg/bg-encanto.jpg" class="m-0 rounded">
-                    <img src="../assets/img/affiche/encanto.jpg" class="m-0" width="125" style="position: absolute; left: 7%; top: 40%; border: 1px black solid; border-radius: 5px;">
-                    <div class="card-body">
+                    <img src="<?php echo $film['image_bg'] ?>" height="250" class="m-0 rounded">
+                    <img src="<?php echo $film['image_link'] ?>" class="m-0" width="125" style="position: absolute; left: 3%; top: 45%; border: 1px black solid; border-radius: 5px;">
+                    <div class="card-body ps-0 pe-0 " style="height: 90px">
                         <table style="width: 100%">
                             <tr>
-                                <td style="width: 40%;"></td>
-                                <td style="width: 60%;">
-                                    <h5 class="m-0">LOREM IPSUM</h5>
-                                    <p class="small m-0">1999</p>
+                                <td style="width: 35%;"></td>
+                                <td style="width: auto;">
+                                    <h5 class="m-0"><?php echo $film['titre'] ?></h5>
+                                    <p class="small m-0"><?php echo $film['annee_sortie'] ?></p>
                                 </td>
                             </tr>
                         </table>
                     </div>
                 </div>
             </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </section>
