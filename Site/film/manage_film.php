@@ -1,19 +1,19 @@
 <?php
     session_start();
-    $bdd = new PDO('mysql:host=localhost;dbname=kut-cinema;charset=utf8','root','');
-    $req = $bdd->prepare('SELECT * FROM salle');
+    $bdd = new PDO('mysql:host=localhost;dbname=kut-cinema;charset=utf8', 'root', '');
+    $req = $bdd->prepare('SELECT * FROM film');
     $req->execute();
-    $res1 = $req->fetchAll();
+    $res1 = $req->fetchall();
 ?>
 
 <!DOCTYPE html>
-<html lang="fr" xmlns="http://www.w3.org/1999/html">
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Gestion Salle</title>
+        <title>Gestion Film</title>
         <link rel="icon" type="image/x-icon" href="../assets/img/LogoKUTCinéma.png"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
@@ -51,38 +51,29 @@
             <div class="container">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <?php
-                        foreach ($res1 as $val){
-                            $req = $bdd->prepare('SELECT * FROM film WHERE id_film = :id_film');
-                            $req->execute(array(
-                                    "id_film"=>$val['ref_film'],
-                            ));
-                            $res2 = $req->fetch();
-                            echo "
-                                <div class='col'>
-                                    <div class='card'>
-                                        <div class='card-body'>
-                                            <table style='width: 100%'>
-                                                <tr>
-                                                    <td style='width: 40%;'>
-                                                        <img src='".$res2['image_link']."' height='50' alt='Affiche du film'>
-                                                        <p class='small m-0'>".$res2['titre']."</p>
-                                                    </td>
-                                                    <td style='width: 60%;'>
-                                                        <h5 class='m-0'>".$val['nom']."</h5>
-                                                        <p class='small m-0'>Place : ".$val['nb_place_salle']."</p>
-                                                        <div class='d-grid gap-2 d-md-flex'>
-                                                            <a class='btn btn-primary btn-sm' role='button' style='width: 48%;' href='update_salle.php?id_salle=".$val['id_salle']."'>Modifier</a>
-                                                            <a class='btn btn-primary btn-sm' role='button' style='width: 48%;' href='delete_salle.php?id_salle=".$val['id_salle']."'>Supprimer</a>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
+                        foreach ($res1 as $film): ?>
+                        <div class="col">
+                            <div class="card">
+                                <img src="<?php echo $film['image_bg'] ?>" height="250" class="m-0 rounded" alt="">
+                                <img src="<?php echo $film['image_link'] ?>" class="m-0" width="125" style="position: absolute; left: 3%; top: 45%; border: 1px black solid; border-radius: 5px;" alt="">
+                                <div class="card-body ps-0 pe-0 " style="height: 60%">
+                                    <table style="width: 100%">
+                                        <tr>
+                                            <td style="width: 35%;"></td>
+                                            <td style="width: auto;">
+                                                <h5 class="m-0"><?php echo $film['titre'] ?></h5>
+                                                <p class="small m-0"><?php echo $film['annee_sortie'] ?></p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class='d-grid gap-2 d-md-flex'>
+                                        <a class='btn btn-primary btn-sm' role='button' style='width: 48%;' href='update_film.php?id_film=<?php echo $film['id_film']?>'>Modifier</a>
+                                        <a class='btn btn-primary btn-sm' role='button' style='width: 48%;' href='delete_film.php?id_film=<?php echo $film['id_film']?>'>Supprimer</a>
                                     </div>
                                 </div>
-                            ";
-                        }
-                    ?>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </section>
