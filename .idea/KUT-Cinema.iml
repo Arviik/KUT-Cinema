@@ -12,5 +12,7 @@
     <orderEntry type="library" name="SimpleLightbox" level="application" />
     <orderEntry type="library" name="bootstrap" level="application" />
     <orderEntry type="library" name="sb-forms-latest" level="application" />
+    <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="sb-forms-latest" level="application" />
   </component>
 </module>
