@@ -41,8 +41,6 @@
                                 echo "<li class='nav-item'><a class='nav-link' href='compte/connexion.html'>Connexion</a></li>
                                       <li class='nav-item'><a class='nav-link' href='compte/inscription.html'>Inscription</a></li>";
                             }
-
-
                         ?>
                     </ul>
                 </div>
