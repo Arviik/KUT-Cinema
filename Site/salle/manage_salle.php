@@ -30,7 +30,7 @@
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="/Site/index.php">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.php">Accueil</a></li>
                         <li class="nav-item"><a class="nav-link" href="../film/listefilm.php">Films</a></li>
                         <?php
                             if (isset($_SESSION['id_client'])){
@@ -54,8 +54,8 @@
                         <p class="text-muted mb-5">Gérer les salles de la base de donnée.</p>
                     </div>
                     <div class="col-lg-6">
-                        <a class="btn btn-primary btn-xl px-0 mx-4 my-4" role="button" style="width: 30%" href="../salle/add_salle.html">Accueil admin</a>
-                        <a class="btn btn-primary btn-xl px-0 mx-4 my-4" role="button" style="width: 30%" href="../salle/add_salle.html">Ajouter une salle</a>
+                        <a class="btn btn-primary btn-xl px-0 mx-4 my-4" role="button" style="width: 30%" href="add_salle.php"><u>Accueil admin</u></a>
+                        <a class="btn btn-primary btn-xl px-0 mx-4 my-4" role="button" style="width: 30%" href="add_salle.php">Ajouter une salle</a>
                     </div>
                 </div>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -72,16 +72,16 @@
                                         <div class='card-body'>
                                             <table style='width: 100%'>
                                                 <tr>
-                                                    <td style='width: 40%;'>
+                                                    <td style='width: 35%;'>
                                                         <img class='m-0' src='".$res2['image_link']."' height='50' alt='Affiche du film' style='border: 1px black solid; border-radius: 2px;'>
                                                         <p class='small m-0'>".$res2['titre']."</p>
                                                     </td>
-                                                    <td style='width: 60%;'>
+                                                    <td style='width: 65%;'>
                                                         <h5 class='m-0'>".$val['nom']."</h5>
                                                         <p class='small m-0'>Place : ".$val['nb_place_salle']."</p>
                                                         <div class='d-grid gap-2 d-md-flex'>
                                                             <a class='btn btn-primary btn-sm' role='button' style='width: 48%;' href='update_salle.php?id_salle=".$val['id_salle']."'>Modifier</a>
-                                                            <a class='btn btn-primary btn-sm' role='button' style='width: 48%;' href='delete_salle.php?id_salle=".$val['id_salle']."'>Supprimer</a>
+                                                            <a class='btn btn-primary btn-sm' role='button' style='width: 48%;' href='delete_salle_DB.php?id_salle=".$val['id_salle']."'>Supprimer</a>
                                                         </div>
                                                     </td>
                                                 </tr>
