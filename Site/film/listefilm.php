@@ -64,7 +64,7 @@ $res = $req->fetchall();
                     <div class="card-body ps-0 pe-0 " style="height: 90px">
                         <table style="width: 100%">
                             <tr>
-                                <td style="width: 35%;"></td>
+                                <td style="width: 40%;"></td>
                                 <td style="width: auto;">
                                     <h5 class="m-0"><?php echo $film['titre'] ?></h5>
                                     <p class="small m-0"><?php echo $film['annee_sortie'] ?></p>
@@ -82,7 +82,7 @@ $res = $req->fetchall();
 <footer class="bg-light py-5">
     <div class="d-flex justify-content-evenly">
         <a href="add_film.html" class="small text-muted">Ajout film</a>
-        <a href="../salle/add_salle.html" class="small text-muted">Ajout salle</a>
+        <a href="../salle/add_salle.php" class="small text-muted">Ajout salle</a>
     </div>
 
     <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2021 - KUT Cinéma</div></div>
