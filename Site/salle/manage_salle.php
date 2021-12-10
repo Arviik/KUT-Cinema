@@ -54,7 +54,7 @@
                         <p class="text-muted mb-5">Gérer les salles de la base de donnée.</p>
                     </div>
                     <div class="col-lg-6">
-                        <a class="btn btn-primary btn-xl px-0 mx-4 my-4" role="button" style="width: 30%" href="add_salle.php"><u>Accueil admin</u></a>
+                        <a class="btn btn-primary btn-xl px-0 mx-4 my-4" role="button" style="width: 30%" href="../index_admin.php"><u>Accueil admin</u></a>
                         <a class="btn btn-primary btn-xl px-0 mx-4 my-4" role="button" style="width: 30%" href="add_salle.php">Ajouter une salle</a>
                     </div>
                 </div>
