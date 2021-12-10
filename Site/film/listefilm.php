@@ -63,7 +63,7 @@ $res = $req->fetchall();
                     <div class="card-body ps-0 pe-0 " style="height: 90px">
                         <table style="width: 100%">
                             <tr>
-                                <td style="width: 35%;"></td>
+                                <td style="width: 40%;"></td>
                                 <td style="width: auto;">
                                     <h5 class="m-0"><?php echo $film['titre'] ?></h5>
                                     <p class="small m-0"><?php echo $film['annee_sortie'] ?></p>
