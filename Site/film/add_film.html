@@ -25,7 +25,7 @@
         </div>
         <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
             <div class="col-lg-6">
-                <form action="../film/add_film.php" method="post">
+                <form action="../film/add_film.php" method="post" enctype="multipart/form-data">
                     <!-- Name input-->
                     <div class="form-floating mb-3">
                         <input class="form-control" id="titre" type="text" placeholder="Titre" data-sb-validations="required" name="titre" />
@@ -61,6 +61,21 @@
                         <input class="form-control" id="description" type="text" placeholder="Description" data-sb-validations="required" name="description" />
                         <label for="description">Description</label>
                         <div class="invalid-feedback" data-sb-feedback="name:required">La description est demander</div>
+                    </div>
+                    <div class="form-floating mb-3">
+                            <div>
+                                <label for="image_link">Sélectionner l'image à envoyer</label>
+                                <input class="form-control" type="file" id="image_link" name="image_link" multiple accept=".jpg, .jpeg, .png">
+                            </div>
+
+                         </div>
+                    <div class="form-floating mb-3">
+                        <div>
+                            <label for="image_bg">Sélectionner l'image de fond à envoyer</label>
+                            <input class="form-control" type="file" id="image_bg" name="image_bg" multiple accept=".jpg, .jpeg, .png">
+                        </div>
+                        <div>
+                        </div>
                     </div>
                     <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                     <!-- Submit Button-->
