@@ -75,7 +75,7 @@
                                                         <h5 class='m-0'>".$val['titre']."</h5>
                                                         <p class='small m-0'>Année de sortie : ".$val['annee_sortie']."</p>
                                                         <div class='d-grid gap-2 d-md-flex'>
-                                                            <a class='btn btn-primary btn-sm' role='button' style='width: 48%;' href=''>Modifier</a>
+                                                            <a class='btn btn-primary btn-sm' role='button' style='width: 48%;' href='update_film.php?id_film=".$val['id_film']."'>Modifier</a>
                                                             <a class='btn btn-primary btn-sm' role='button' style='width: 48%;' href='delete_film_DB.php?id_film=".$val['id_film']."'>Supprimer</a>
                                                         </div>
                                                     </td>
