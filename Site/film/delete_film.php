@@ -4,4 +4,4 @@
     $req->execute(array(
         "id_film"=>$_GET['id_film'],
     ));
-    header('Location: listefilm.php');
+    header('Location: manage_film.php');
