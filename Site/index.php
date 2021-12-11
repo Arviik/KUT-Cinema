@@ -27,9 +27,9 @@
                         <?php
                         session_start();
                         if (isset($_SESSION['id_client'])){
-                            echo "<li class='nav-item'><a class='nav-link' href='compte/modification.php'>Bienvenue ".$_SESSION['prenom']."</a></li>
-                                  <li class='nav-item'><a class='nav-link' href='reservation/historiquereservation.php'>Reservation</a></li>
-                                  <li class='nav-item'><a class='nav-link' href='compte/deconnexion.php'>Déconnexion</a></li>";
+                            echo "<li class='nav-item'><a class='nav-link' href='compte/modification.php'>Bienvenue ".$_SESSION['prenom']. "</a></li>
+                                  <li class='nav-item'><a class='nav-link' href='reservation/historique_reservation.php'>Reservation</a></li>
+                                  <li class='nav-item'><a class='nav-link' href='compte/deconnexionDB.php'>Déconnexion</a></li>";
                         }else{
                             echo "<li class='nav-item'><a class='nav-link' href='compte/inscription.html'>Inscription</a></li>
                                   <li class='nav-item'><a class='nav-link' href='compte/connexion.html'>Connexion</a></li>";
@@ -43,10 +43,10 @@
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-8 align-self-end">
                         <h1 class="text-white font-weight-bold">Votre cinéma favori !</h1>
-                        <hr class="divider" />
+                        <hr class="divider"/>
                     </div>
                     <div class="col-lg-7 align-self-baseline">
-                        <p class="text-white-75 mb-6">Regardez notre sélection des films du moments à retrouver dans nos salles !</p>
+                        <p class="text-white-75 mb-6">Regardez notre sélection des films du moments à retrouver dans nos salles.</p>
                         <a class="btn btn-primary btn-xl" href="#about">Voir les films à l'affiche</a>
                     </div>
                 </div>
@@ -58,7 +58,7 @@
                     <div class="col-lg-8 text-center">
                         <h2 class="text-white mt-0">Nous sommes <b>LE</b> cinéma que vous avez besoin !</h2>
                         <hr class="divider divider-light" />
-                        <p class="text-white-75 mb-4">Avec notre sélection de films de qualité, vous ne serrez jamais déçu en salle !</p>
+                        <p class="text-white-75 mb-4">Avec notre sélection de films de qualité, vous ne serrez jamais déçu en salle.</p>
                     </div>
                 </div>
             </div>
@@ -96,7 +96,7 @@
                     </div>
                     <div class="col-lg-3 col-sm-6">
                         <a class="portfolio-box" href="film/affiche.php?id_film=5" title="Project Name">
-                            <img class="img-fluid" src="assets/img/affiche/gucci.jpg" alt="..." />
+                            <img class="img-fluid" src="assets/img/affiche/gucci.png" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">FILM</div>
                                 <div class="project-name">House of gucci</div>
@@ -118,6 +118,24 @@
                             <div class="portfolio-box-caption p-3">
                                 <div class="project-category text-white-50">FILM</div>
                                 <div class="project-name">Venom</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <a class="portfolio-box" href="film/affiche.php?id_film=8" title="Project Name">
+                            <img class="img-fluid" src="assets/img/affiche/matrix_resurrections.png" alt="..." />
+                            <div class="portfolio-box-caption p-3">
+                                <div class="project-category text-white-50">FILM</div>
+                                <div class="project-name">Matrix Resurrections</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <a class="portfolio-box" href="film/affiche.php?id_film=9" title="Project Name">
+                            <img class="img-fluid" src="assets/img/affiche/clifford.png" alt="..." />
+                            <div class="portfolio-box-caption p-3">
+                                <div class="project-category text-white-50">FILM</div>
+                                <div class="project-name">Clifford</div>
                             </div>
                         </a>
                     </div>

@@ -33,9 +33,9 @@
                     <li class="nav-item"><a class="nav-link" href="../film/listefilm.php">Films</a></li>
                     <?php
                     if (isset($_SESSION['id_client'])){
-                        echo "<li class='nav-item'><a class='nav-link' href='../compte/modification.php'>Bienvenue ".$_SESSION['prenom']."</a></li>
-                                  <li class='nav-item'><a class='nav-link' href='../reservation/historiquereservation.php'>Reservation</a></li>
-                                  <li class='nav-item'><a class='nav-link' href='../compte/deconnexion.php'>Déconnexion</a></li>";
+                        echo "<li class='nav-item'><a class='nav-link' href='../compte/modification.php'>Bienvenue ".$_SESSION['prenom']. "</a></li>
+                                  <li class='nav-item'><a class='nav-link' href='../reservation/historique_reservation.php'>Reservation</a></li>
+                                  <li class='nav-item'><a class='nav-link' href='../compte/deconnexionDB.php'>Déconnexion</a></li>";
                     }else{
                         echo "<li class='nav-item'><a class='nav-link' href='../compte/inscription.html'>Inscription</a></li>
                                   <li class='nav-item'><a class='nav-link' href='../compte/connexion.html'>Connexion</a></li>";
@@ -46,6 +46,13 @@
     </nav>
         <section class="page-section">
             <div class="container">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6 text-center">
+                        <h2 class="mt-0">Liste des films</h2>
+                        <hr class="divider"/>
+                        <p class="text-muted mb-5">La liste de tous nos films!!!</p>
+                    </div>
+                </div>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <?php foreach (array_slice($res,1) as $film): ?>
                     <div class="col">

@@ -30,8 +30,8 @@
                         <li class="nav-item"><a class="nav-link" href="../film/listefilm.php">Films</a></li>
                         <?php
                         if (isset($_SESSION['id_client'])){
-                            echo "<li class='nav-item'><a class='nav-link' href='../compte/modification.php'>Bienvenue ".$_SESSION['prenom']."</a></li>
-                                          <li class='nav-item'><a class='nav-link' href='../compte/deconnexion.php'>Déconnexion</a></li>";
+                            echo "<li class='nav-item'><a class='nav-link' href='../compte/modification.php'>Bienvenue ".$_SESSION['prenom']. "</a></li>
+                                          <li class='nav-item'><a class='nav-link' href='../compte/deconnexionDB.php'>Déconnexion</a></li>";
                         }else{
                             echo "<li class='nav-item'><a class='nav-link' href='../compte/inscription.html'>Inscription</a></li>
                                           <li class='nav-item'><a class='nav-link' href='../compte/connexion.html'>Connexion</a></li>";
