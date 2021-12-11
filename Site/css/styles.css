@@ -606,6 +606,7 @@ progress {
   margin-left: auto;
   margin-right: auto;
 }
+
 .img-fluidi {
   width: 320px;
   height: auto;
@@ -11514,16 +11515,20 @@ header.masthead h1, header.masthead .h1 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 10%;
+  left: 25%;
+  top: 40%;
   position: absolute;
   bottom: 0;
   text-align: center;
   opacity: 0;
   color: #fff;
   background: rgba(244, 98, 58, 0.9);
-  transition: opacity 0.25s ease;
+
+  transition: opacity 0.5s ease;
   text-align: center;
+  z-index: 1001;
 }
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-category {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -11537,4 +11542,17 @@ header.masthead h1, header.masthead .h1 {
 }
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
+}
+
+#portfolio .portfolio-box img {
+  transition: .5s;
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+  z-index: 1;
+}
+
+#portfolio .portfolio-box:hover img {
+  transform: scale(1.1);
+  z-index: 1000;
 }
