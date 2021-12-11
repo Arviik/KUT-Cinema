@@ -22,18 +22,17 @@
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Films</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.php">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="film/listefilm.php">Films</a></li>
                         <?php
-                            session_start();
-                            if (isset($_SESSION['id_client'])){
-                                echo "<li class='nav-item'><a class='nav-link' href='compte/connexion.html'>Bienvenue " .$_SESSION['prenom']. "</a></li>
-                                      <li class='nav-item'><a class='nav-link' href='compte/modification.php'>Modifier profil</a></li>
-                                      <li class='nav-item'><a class='nav-link' href='compte/deconnexion.php'>Déconnexion</a></li>";
-                            }else{
-                                echo "<li class='nav-item'><a class='nav-link' href='compte/connexion.html'>Connexion</a></li>
-                                      <li class='nav-item'><a class='nav-link' href='compte/inscription.html'>Inscription</a></li>";
-                            }
-                        ?>
+                        session_start();
+                        if (isset($_SESSION['id_client'])){
+                            echo "<li class='nav-item'><a class='nav-link' href='compte/modification.php'>Bienvenue ".$_SESSION['prenom']."</a></li>
+                                  <li class='nav-item'><a class='nav-link' href='compte/deconnexion.php'>Déconnexion</a></li>";
+                        }else{
+                            echo "<li class='nav-item'><a class='nav-link' href='compte/inscription.html'>Inscription</a></li>
+                                  <li class='nav-item'><a class='nav-link' href='compte/connexion.html'>Connexion</a></li>";
+                        }?>
                     </ul>
                 </div>
             </div>
@@ -127,13 +126,13 @@
         <section class="page-section bg-dark text-white pt-4 pb-4">
             <div class="container px-4 px-lg-5 text-center">
                 <h2 class="mb-4 ">Voir toute la liste des films ici !</h2>
-                <a class="btn btn-light btn-xl" href="film/listefilm.php">Voir la liste de film</a>
+                <a class="btn btn-light btn-xl" href="film/listefilm.php">Voir la liste des films</a>
             </div>
         </section>
         <footer class="bg-light py-5">
             <div class="container px-4 px-lg-5">
-                <div class="small text-center text-muted">
-                    <a href="index_admin.php" class="small text-muted">Accueil admin </a>Copyright &copy; 2021 - KUT Cinéma</div>
+                <a href="index_admin.php" class="small text-muted">Accueil admin </a>
+                <div class="small text-center text-muted">Copyright &copy; 2021 - KUT Cinéma</div>
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
