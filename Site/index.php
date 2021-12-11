@@ -28,6 +28,7 @@
                         session_start();
                         if (isset($_SESSION['id_client'])){
                             echo "<li class='nav-item'><a class='nav-link' href='compte/modification.php'>Bienvenue ".$_SESSION['prenom']."</a></li>
+                                  <li class='nav-item'><a class='nav-link' href='reservation/historiquereservation.php'>Reservation</a></li>
                                   <li class='nav-item'><a class='nav-link' href='compte/deconnexion.php'>Déconnexion</a></li>";
                         }else{
                             echo "<li class='nav-item'><a class='nav-link' href='compte/inscription.html'>Inscription</a></li>
@@ -64,9 +65,9 @@
         </section>
         <form method="post" action="film/affiche.php"></form>
         <div id="portfolio">
-            <div class="container-fluid p-0">
+            <div class="container-fluid p-0" style="background: rgb(244,98,58); background: linear-gradient(180deg, rgba(244,98,58,1) 0%, rgba(33,37,41,1) 100%);">
                 <div class="row g-0">
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-3 col-sm-6">
                         <a class="portfolio-box" href="film/affiche.php?id_film=2" title="Encanto">
                             <img class="img-fluid" src="assets/img/affiche/encanto.jpg" alt="..." />
                             <div class="portfolio-box-caption">
@@ -75,7 +76,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-3 col-sm-6">
                         <a class="portfolio-box" href="film/affiche.php?id_film=3" title="SOS Fantome">
                             <img class="img-fluid" src="assets/img/affiche/sosfantome.jpg" alt="..." />
                             <div class="portfolio-box-caption">
@@ -84,7 +85,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-3 col-sm-6">
                         <a class="portfolio-box" href=film/affiche.php?id_film=4" title="Project Name">
                             <img class="img-fluid" src="assets/img/affiche/eternels.jpg" alt="..." />
                             <div class="portfolio-box-caption">
@@ -93,7 +94,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-3 col-sm-6">
                         <a class="portfolio-box" href="film/affiche.php?id_film=5" title="Project Name">
                             <img class="img-fluid" src="assets/img/affiche/gucci.jpg" alt="..." />
                             <div class="portfolio-box-caption">
@@ -102,7 +103,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-3 col-sm-6">
                         <a class="portfolio-box" href="film/affiche.php?id_film=6" title="Project Name">
                             <img class="img-fluid" src="assets/img/affiche/supremes.jpg" alt="..." />
                             <div class="portfolio-box-caption">
@@ -111,7 +112,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-3 col-sm-6">
                         <a class="portfolio-box" href="film/affiche.php?id_film=7" title="Project Name">
                             <img class="img-fluid" src="assets/img/affiche/venom.jpg" alt="..." />
                             <div class="portfolio-box-caption p-3">

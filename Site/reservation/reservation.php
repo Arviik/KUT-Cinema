@@ -39,6 +39,9 @@
                             ?>
                         <select id="salle" class="form-select" name="salle">
                             <?php
+                            if (!(isset($res['0']['id_salle']))){
+                                echo "<option disabled selected>Aucune salle disponible pour le moment</option>";
+                            }
                             foreach ($res as $salle){
                                 echo "<option value='".$salle['id_salle']."'>".$salle['nom']."</option>";
                             }
@@ -83,7 +86,7 @@
                     </div>
                     <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                     <!-- Submit Button-->
-                    <div class="d-grid"><button class="btn btn-primary btn-xl " id="submitButton" type="submit">Modifier profil</button></div>
+                    <div class="d-grid"><button class="btn btn-primary btn-xl " id="submitButton" type="submit">Reserver votre place</button></div>
                 </form>
             </div>
         </div>
