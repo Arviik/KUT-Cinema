@@ -54,7 +54,7 @@
                     </div>
                     <div class="col-lg-6">
                         <a class="btn btn-primary btn-xl px-0 mx-4 my-4" role="button" style="width: 30%" href="../index_admin.php"><u>Accueil admin</u></a>
-                        <a class="btn btn-primary btn-xl px-0 mx-4 my-4" role="button" style="width: 30%" href="add_film.html">Ajouter un film</a>
+                        <a class="btn btn-primary btn-xl px-0 mx-4 my-4" role="button" style="width: 30%" href="add_film.php">Ajouter un film</a>
                     </div>
                 </div>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -76,7 +76,7 @@
                                                         <p class='small m-0'>Année de sortie : ".$val['annee_sortie']."</p>
                                                         <div class='d-grid gap-2 d-md-flex'>
                                                             <a class='btn btn-primary btn-sm' role='button' style='width: 48%;' href=''>Modifier</a>
-                                                            <a class='btn btn-primary btn-sm' role='button' style='width: 48%;' href='delete_film.php?id_film=".$val['id_film']."'>Supprimer</a>
+                                                            <a class='btn btn-primary btn-sm' role='button' style='width: 48%;' href='delete_film_DB.php?id_film=".$val['id_film']."'>Supprimer</a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -92,9 +92,7 @@
         </section>
         <footer class="bg-light py-5">
             <div class="d-flex justify-content-evenly">
-                <a href="../film/add_film.html" class="small text-muted">Ajout film</a>
                 <div class="small text-center text-muted">Copyright &copy; 2021 - KUT Cinéma</div>
-                <a href="../salle/add_salle.php" class="small text-muted">Ajout salle</a>
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
