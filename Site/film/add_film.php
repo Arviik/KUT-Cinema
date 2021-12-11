@@ -9,7 +9,7 @@ $req->execute(array(
     "realisateur"=>$_POST['realisateur'],
     "acteur"=>$_POST['acteur'],
     "description"=>$_POST['description'],
-    "image_link"=>$_POST['image_link'],
-    "image_bg"=>$_POST['image_bg'],
+    "image_link"=>$_FILES['image_link']['name'],
+    "image_bg"=>$_FILES['image_bg']['name'],
 ));
 header('Location: ../index.php');
