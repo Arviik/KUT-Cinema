@@ -104,8 +104,10 @@ if (isset($_SESSION['id_film'])){
 
                     Avec Camille Timmerman, José Garcia, Juan Arbelaez, Dominique Quesnel, Julián Andrés Ortiz Cardona</p>";
                 }?>
+                <form action="../reservation/reservation.php" method="post">
+                    <input type="submit" class="btn btn-light btn-xl" href="../reservation/reservation.php" value="Achetez vos places">
+                </form>
 
-                <a class="btn btn-light btn-xl" href="#services" >Acheter vos place</a>
             </div>
             <div class="col-lg-6 col-md-9 text">
                 <div class="col-size text-center"><p class="police">Synopsis</p></div>

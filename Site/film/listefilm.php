@@ -46,7 +46,7 @@
         <section class="page-section">
             <div class="container">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <?php foreach ($res as $film): ?>
+                    <?php foreach (array_slice($res,1) as $film): ?>
                     <a class='police' style='text-decoration: none; color: black' href="affiche.php?id_film=<?php echo $film['id_film'] ?>" >
                     <div class="col">
                         <div class="card">

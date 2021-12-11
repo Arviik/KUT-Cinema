@@ -11,4 +11,4 @@ $req->execute(array(
     "ref_salle"=>$_POST['salle'],
     "ref_tarif"=>$_POST['tarif'],
 ));
-header('Location: index.php');
+header('Location: ../index.php');

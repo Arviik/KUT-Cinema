@@ -28,21 +28,23 @@
         <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
             <div class="col-lg-6">
                 <form action="../reservation/reservationDB.php" method="post">
-                    <label>
-                        <input name="id" type="text" <?php echo "value='".$_SESSION['id_client']."'"?> hidden>
-                    </label>
                     <div class="form-floating mb-3">
-                        <select id="salle" class="form-select" name="salle">
                             <?php
                             $bdd = new PDO('mysql:host=localhost;dbname=kut-cinema;charset=utf8', 'root', '');
-                            $req = $bdd->query('SELECT * FROM salle');
-                            $res = $req->fetchall();
-                            foreach ($res as $salle) {
+                            $req = $bdd->prepare('SELECT * FROM salle WHERE ref_film=:ref_film');
+                            $req->execute(array(
+                                "ref_film"=>$_SESSION['id_film']
+                            ));
+                            $res = $req->fetchAll();
+                            ?>
+                        <select id="salle" class="form-select" name="salle">
+                            <?php
+                            foreach ($res as $salle){
                                 echo "<option value='".$salle['id_salle']."'>".$salle['nom']."</option>";
                             }
                             ?>
                         </select>
-                        <label for="salle">Salle</label>
+                        <label for='salle'>Salle</label>
                     </div>
                     <div class="form-floating mb-3">
                         <div class="d-flex justify-content-lg-around">
