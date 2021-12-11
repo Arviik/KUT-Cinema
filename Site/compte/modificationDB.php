@@ -7,7 +7,7 @@
         "prenom"=>$_POST['prenom'],
         "mot_de_passe"=>$_POST['password'],
         "email"=>$_POST['email'],
-        "id"=>$_SESSION['id_film'],
+        "id"=>$_SESSION['id_client'],
     ));
     $_SESSION['email']=$_POST['email'];
     $_SESSION['prenom']=$_POST['prenom'];
