@@ -124,8 +124,8 @@
                 </div>
             </div>
         </div>
-        <section class="page-section bg-dark text-white pt-4 pb-4 pt-lg-5">
-            <div class="container px-4 px-lg-5 text-center pt-lg-5">
+        <section class="page-section bg-dark text-white pt-4 pb-4 pt-lg-5 pb-lg-5">
+            <div class="container px-4 px-lg-5 text-center pt-lg-5 pb-lg-5">
                 <h2 class="mb-4 ">Voir toute la liste des films ici !</h2>
                 <a class="btn btn-light btn-xl" href="film/listefilm.php">Voir la liste des films</a>
             </div>
