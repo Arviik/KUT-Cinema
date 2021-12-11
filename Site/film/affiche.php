@@ -61,7 +61,7 @@ else{
 </nav>
 <!-- Masthead-->
 <?php
-if (isset($_SESSION['id_film'])){
+if (isset($res['id_film'])){
     echo " <header class='masthead' 
     padding-top: 10rem; 
      padding-bottom: calc(10rem - 4.5rem);
@@ -74,10 +74,10 @@ if (isset($_SESSION['id_film'])){
     <div class="container px-4 px-lg-5 h-100">
         <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content text-center">
                 <?php
-                            if (isset($_SESSION['id_film'])){
+                            if (isset($res['id_film'])){
                                 echo "<div class='col-lg-4 col-sm-6'>
                                       <a class='portfolio-box' href='/Site/assets/img/affiche/encanto.jpg' title='Encanto'>
-                                      <img class='img-fluidi' src=" . $_SESSION['image_link']. " alt='...' /></a>
+                                      <img class='img-fluidi' src=" . $res['image_link']. " alt='...' /></a>
                                       </div>";
                                 }?>
 
@@ -91,14 +91,14 @@ if (isset($_SESSION['id_film'])){
         <div class="row gx-4 gx-lg-5 justify-content">
             <div class="col-lg-6 col-md-9 text">
                 <?php
-                if (isset($_SESSION['id_film'])){
-                    echo "<p class= 'text-white-75 mb-3'>Genre : " . $_SESSION['genre']. "</br>
+                if (isset($res['id_film'])){
+                    echo "<p class= 'text-white-75 mb-3'>Genre : " . $res['genre']. "</br>
 
-                    Titre original : " . $_SESSION['titre']. "</br>
+                    Titre original : " . $res['titre']. "</br>
 
-                    Date de sortie : " . $_SESSION['annee_sortie']. "</br>
+                    Date de sortie : " . $res['annee_sortie']. "</br>
 
-                    Réalisé par " . $_SESSION['realisateur']. "</br>
+                    Réalisé par " . $res['realisateur']. "</br>
 
                     Durée : " . $_SESSION['duree']. "</br>
 
@@ -110,8 +110,8 @@ if (isset($_SESSION['id_film'])){
             <div class="col-lg-6 col-md-9 text">
                 <div class="col-size text-center"><p class="police">Synopsis</p></div>
                 <?php
-                if (isset($_SESSION['id_film'])){
-                    echo "<p class='text-white-75 mb-3'>" . $_SESSION['description']. "</p>";
+                if (isset($res['id_film'])){
+                    echo "<p class='text-white-75 mb-3'>" . $res['description']. "</p>";
                 }?>
 
 
