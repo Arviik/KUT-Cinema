@@ -11,4 +11,8 @@
         "ref_salle"=>$_POST['salle'],
         "ref_tarif"=>$_POST['tarif'],
     ));
-    header('Location: ../index.php');
+    $_SESSION['nb_place'] =$_POST['nb_place'];
+    $_SESSION['moyen_paiement']=$_POST['moyen_paiement'];
+    $_SESSION['id_salle']=$_POST['salle'];
+    $_SESSION['tarif']=$_POST['tarif'];
+    header('Location: reservation_valide.php');

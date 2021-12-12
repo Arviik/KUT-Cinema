@@ -11556,3 +11556,46 @@ header.masthead h1, header.masthead .h1 {
   transform: scale(1.1);
   z-index: 1000;
 }
+
+.ticket{
+  display: flex;
+  transform: translateY(35%) rotate(-5deg);
+  justify-content: center;
+  animation: ticket 2s;
+  left: 25%;
+  position: relative;
+  width: 1024px;
+}
+
+@keyframes ticket {
+  0%{
+    transform: translateY(-600px);
+  }
+  100%{
+    transform: translateY(35%) rotate(-5deg);
+  }
+}
+.ticket img{
+  position: relative;
+  width: 100%;
+}
+
+.ticket p{
+  position: absolute;
+}
+
+.retour{
+
+  opacity: 1;
+  animation: btnOpac 2s;
+}
+
+@keyframes btnOpac {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+
+  }
+}

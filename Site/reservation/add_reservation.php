@@ -40,6 +40,7 @@
                         <select id="salle" class="form-select" name="salle">
                             <?php
                             if (!(isset($res['0']['id_salle']))){
+                                $nondisponible = 1;
                                 echo "<option disabled selected>Aucune salle disponible pour le moment</option>";
                             }
                             foreach ($res as $salle){
@@ -52,13 +53,13 @@
                     <div class="form-floating mb-3">
                         <div class="d-flex justify-content-lg-around">
                             <label>Carte bancaire
-                                <input type="radio" name="moyen_paiement" value="CB">
+                                <input type="radio" name="moyen_paiement" value="Carte Bancaire">
                             </label>
                             <label>PayPal
-                                <input type="radio" name="moyen_paiement" value="paypal">
+                                <input type="radio" name="moyen_paiement" value="PayPal">
                             </label>
                             <label>Espèces
-                                <input type="radio" name="moyen_paiement" value="espece">
+                                <input type="radio" name="moyen_paiement" value="Espèces">
                             </label>
                         </div>
                     </div>
@@ -86,7 +87,15 @@
                     </div>
                     <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                     <!-- Submit Button-->
-                    <div class="d-grid"><button class="btn btn-primary btn-xl " id="submitButton" type="submit">Reserver votre place</button></div>
+                    <div class='d-grid'>
+                        <?php
+                        if (isset($nondisponible)){
+                            echo "<button disabled class='btn btn-primary btn-xl' id='submitButton' type='submit'>Reserver votre place</button>";
+                        }else{
+                            echo "<button class='btn btn-primary btn-xl' id='submitButton' type='submit'>Reserver votre place</button>";
+                        }
+                        ?>
+                  </div>
                 </form>
             </div>
         </div>

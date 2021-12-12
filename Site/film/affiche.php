@@ -113,7 +113,14 @@ if (isset($res['id_film'])){
                     Avec Camille Timmerman, José Garcia, Juan Arbelaez, Dominique Quesnel, Julián Andrés Ortiz Cardona</p>";
                 }?>
                 <form action="../reservation/add_reservation.php" method="post">
-                    <input type="submit" class="btn btn-light btn-xl" href="../reservation/reservation.php" value="Achetez vos places">
+                    <?php
+                    if (isset($_SESSION['id_client'])){
+                        echo "<input type='submit' class='btn btn-light btn-xl' href='../reservation/reservation.php' value='Achetez vos places'>";
+                    }else{
+                        echo "<input disabled type='submit' class='btn btn-light btn-xl' href='../reservation/reservation.php' value='Achetez vos places'>";
+                    }
+                    ?>
+
                 </form>
 
             </div>
