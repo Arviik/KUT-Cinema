@@ -4,7 +4,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Reserver place</title>
+    <title>Ajout Réservation</title>
     <link href="../css/styles.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="../assets/img/LogoKUTCinéma.png"/>
 </head>
@@ -21,13 +21,13 @@
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-lg-8 col-xl-6 text-center">
                 <h2 class="mt-0">Reservation</h2>
-                <hr class="divider" />
+                <hr class="divider"/>
                 <p class="text-muted mb-5">Reserve ta place pour voir ton film !</p>
             </div>
         </div>
         <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
             <div class="col-lg-6">
-                <form action="../reservation/reservationDB.php" method="post">
+                <form action="add_reservation_DB.php" method="post">
                     <div class="form-floating mb-3">
                             <?php
                             $bdd = new PDO('mysql:host=localhost;dbname=kut-cinema;charset=utf8', 'root', '');
@@ -86,7 +86,6 @@
                         <label for="nb_place">Nombre de place </label>
                     </div>
                     <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                    <!-- Submit Button-->
                     <div class='d-grid'>
                         <?php
                         if (isset($nondisponible)){

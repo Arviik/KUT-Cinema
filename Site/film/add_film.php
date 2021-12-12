@@ -21,7 +21,7 @@
                             session_start();
                             if (isset($_SESSION['id_client'])){
                                 echo "<li class='nav-item'><a class='nav-link' href='../compte/modification.php'>Bienvenue ".$_SESSION['prenom']. "</a></li>
-                                                      <li class='nav-item'><a class='nav-link' href='../compte/deconnexionDB.php'>Déconnexion</a></li>";
+                                                      <li class='nav-item'><a class='nav-link' href='../compte/deconnexion_DB.php'>Déconnexion</a></li>";
                             }else{
                                 echo "<li class='nav-item'><a class='nav-link' href='../compte/inscription.html'>Inscription</a></li>
                                                       <li class='nav-item'><a class='nav-link' href='../compte/connexion.html'>Connexion</a></li>";
@@ -81,9 +81,9 @@
                             <div class="form-floating mb-3">
                                     <div>
                                         <label for="image_link">Sélectionner l'image à envoyer</label>
-                                        <input class="form-control" type="file" id="image_link" name="image_link" multiple accept=".jpg, .jpeg, .png">
-                                    </div>
+                                        <input class="form-control" type="file" id="image_link" name="image_link" multiple accept=".jpg, .jpeg, .png" >
 
+                                    </div>
                                  </div>
                             <div class="form-floating mb-3">
                                 <div>
@@ -96,6 +96,7 @@
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                             <div class="d-grid"><button class="btn btn-primary btn-xl " id="submitButton" type="submit">Ajouter le film</button></div>
                         </form>
+
                     </div>
                 </div>
                 <div class="row gx-4 gx-lg-5 justify-content-center">

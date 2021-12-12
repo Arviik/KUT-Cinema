@@ -25,9 +25,10 @@
                         <li class="nav-item"><a class="nav-link" href="index.php">Accueil</a></li>
                         <li class="nav-item"><a class="nav-link" href="film/listefilm.php">Films</a></li>
                         <?php
+                            session_start();
                             if (isset($_SESSION['id_client'])){
                                 echo "<li class='nav-item'><a class='nav-link' href='compte/modification.php'>Bienvenue ".$_SESSION['prenom']. "</a></li>
-                                      <li class='nav-item'><a class='nav-link' href='compte/deconnexionDB.php'>Déconnexion</a></li>";
+                                      <li class='nav-item'><a class='nav-link' href='compte/deconnexion_DB.php'>Déconnexion</a></li>";
                             }else{
                                 echo "<li class='nav-item'><a class='nav-link' href='compte/inscription.html'>Inscription</a></li>
                                       <li class='nav-item'><a class='nav-link' href='compte/connexion.html'>Connexion</a></li>";
@@ -58,13 +59,13 @@
                         <h2 class="mt-0">Gestionnaire de réservation :</h2>
                         <hr class="divider"/>
                         <p class="text-muted mb-3">Gérer les réservations de la base de donnée.</p>
-                        <a class="btn btn-primary btn-xl px-0 mx-4 my-4" role="button" style="width: 30%" href="salle/manage_salle.php">Gérer les réservations</a>
+                        <a class="btn btn-primary btn-xl px-0 mx-4 my-4" role="button" style="width: 30%" href="reservation/manage_reservation.php">Gérer les réservations</a>
                     </div>
                     <div class="col-lg-8 col-xl-6 text-center">
                         <h2 class="mt-0">Gestionnaire de tarif :</h2>
                         <hr class="divider"/>
                         <p class="text-muted mb-3">Gérer les tarif de la base de donnée.</p>
-                        <a class="btn btn-primary btn-xl px-0 mx-4 my-4" role="button" style="width: 30%" href="salle/manage_salle.php">Gérer les tarifs</a>
+                        <a class="btn btn-primary btn-xl px-0 mx-4 my-4" role="button" style="width: 30%" href="tarif/manage_tarif.php">Gérer les tarifs</a>
                     </div>
                 </div>
             </div>

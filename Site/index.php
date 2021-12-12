@@ -29,7 +29,7 @@
                         if (isset($_SESSION['id_client'])){
                             echo "<li class='nav-item'><a class='nav-link' href='compte/modification.php'>Bienvenue ".$_SESSION['prenom']. "</a></li>
                                   <li class='nav-item'><a class='nav-link' href='reservation/historique_reservation.php'>Reservation</a></li>
-                                  <li class='nav-item'><a class='nav-link' href='compte/deconnexionDB.php'>Déconnexion</a></li>";
+                                  <li class='nav-item'><a class='nav-link' href='compte/deconnexion_DB.php'>Déconnexion</a></li>";
                         }else{
                             echo "<li class='nav-item'><a class='nav-link' href='compte/inscription.html'>Inscription</a></li>
                                   <li class='nav-item'><a class='nav-link' href='compte/connexion.html'>Connexion</a></li>";
@@ -56,7 +56,7 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
-                        <h2 class="text-white mt-0">Nous sommes <b>LE</b> cinéma que vous avez besoin !</h2>
+                        <h2 class="text-white mt-0">Nous sommes <b>LE</b> cinéma dont vous avez besoin !</h2>
                         <hr class="divider divider-light" />
                         <p class="text-white-75 mb-4">Avec notre sélection de films de qualité, vous ne serrez jamais déçu en salle.</p>
                     </div>
