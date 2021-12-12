@@ -51,18 +51,17 @@
             "id_salle"=>$_SESSION['id_salle']
         ));
         $res2 = $req2->fetch();
+        $req3 = $bdd->prepare('SELECT * FROM tarif WHERE id_tarif=:id_tarif');
+        $req3->execute(array(
+            "id_tarif"=>$_SESSION['tarif']
+        ));
+        $res3 = $req3->fetch();
         ?>
         <img src="../assets/img/ticket.png" alt="ticket" style="width: 1080px">
-        <p class="police" style="top: 3%; font-size: 2em"><u>TICKET KUT CINEMA</u></p>
+        <h1 class="police" style="top: 5%;"><u>TICKET KUT CINEMA</u></h1>
         <hr class="divider" style="top: 30px;"/>
-        <img class="rounded-2" src="<?php echo $res['image_link'] ?>" style="z-index: 5; position:absolute; width: 25%; top: 20%; left: 15%">
-        <!--<p class="police" style="top: 20%; right: 30%; font-size: 1em"><u>Film :</u></p>
-        <p class="police" style="top: 23%; right: 24%; font-size: 1.5em">Encanto</p>
-        <p class="police" style="top: 30%; right: 30%; font-size: 1em"><u>Salle :</u></p>
-        <p class="police" style="top: 33%; right: 27.5%; font-size: 1.5em">Salle 1</p>
-        <p class="police" style="top: 39%; right: 21%; font-size: 1em"><u>Nombre de place :</u></p>
-        <p class="police" style="top: 42%; right: 31%; font-size: 1.5em">4</p>-->
-        <table class="table police" style="position: absolute; width: 50%; top: 20%; right: 5%">
+        <img alt="Affiche du film" class="rounded-2" src="<?php echo $res['image_link'] ?>" style="z-index: 5; position:absolute; width: 25%; top: 20%; left: 13%">
+        <table class="table police" style="position: absolute; width: 50%; top: 20%; right: 7%">
             <tr>
                 <td>Film :</td>
                 <td><?php echo $res['titre']?></td>
@@ -81,7 +80,7 @@
             </tr>
             <tr>
                 <td>Tarif :</td>
-                <td><?php echo $_SESSION['tarif']?></td>
+                <td><?php echo $res3['nom']?></td>
             </tr>
             <tr>
                 <td>Moyen de paiement :</td>
@@ -90,6 +89,6 @@
         </table>
         <h3 class="police" style="position: absolute; width: 40%; top: 70%; right: 7%">Passez une bonne séance !</h3>
     </div>
-    <a href="../index.php"><button class="btn btn-light btn-xl retour" style="  position: absolute; top: 90%; right: 5%;">Retour à l'acceuil</button></a>
+    <a href="../index.php"><button class="btn btn-light btn-xl retour" style="  position: absolute; top: 90%; right: 5%;">Retour à l'accueil</button></a>
 </body>
 </html>
