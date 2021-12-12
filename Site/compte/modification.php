@@ -27,7 +27,7 @@
                 </div>
                 <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
                     <div class="col-lg-6">
-                        <form action="../compte/modificationDB.php" method="post">
+                        <form action="modification_DB.php" method="post">
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="nom" type="text" placeholder="Nom" data-sb-validations="required" name="nom" <?php echo "value='".$_SESSION['nom']."'"?> />
                                 <label for="nom">Nom</label>

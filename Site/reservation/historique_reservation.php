@@ -23,7 +23,7 @@
                     if (isset($_SESSION['id_client'])){
                         echo "<li class='nav-item'><a class='nav-link' href='../compte/modification.php'>Bienvenue ".$_SESSION['prenom']. "</a></li>
                                   <li class='nav-item'><a class='nav-link' href='historique_reservation.php'>Reservation</a></li>
-                                  <li class='nav-item'><a class='nav-link' href='../compte/deconnexionDB.php'>Déconnexion</a></li>";
+                                  <li class='nav-item'><a class='nav-link' href='../compte/deconnexion_DB.php'>Déconnexion</a></li>";
                     }else{
                         echo "<li class='nav-item'><a class='nav-link' href='../compte/inscription.html'>Inscription</a></li>
                                   <li class='nav-item'><a class='nav-link' href='../compte/connexion.html'>Connexion</a></li>";
@@ -69,16 +69,20 @@
                                     <td>".$reservation['ref_tarif']."</td>
                                     <td>".$reservation['moyen_paiement']."</td>
                                     <td>".$reservation['date_reservation']."</td>
-                                    <td><form action='delete_reservation_DB.php' method='post'><input alt='Bouton supprimer' type='image' src='../assets/img/delete_logo.png' height='20'><input hidden type='text' name='id_reservation' value='".$reservation['id_reservation']."'></form></td>
-                                </tr>
-                                 ";
+                                    <td>
+                                        <form action='delete_reservation_DB.php' method='post'>
+                                            <input alt='Bouton supprimer' type='image' src='../assets/img/delete_logo.png' height='20'>
+                                            <input hidden type='text' name='id_reservation' value='".$reservation['id_reservation']."'>
+                                        </form>
+                                    </td>
+                                  </tr>
+                            ";
                         }
                     ?>
                     </tbody>
                 </table>
             </div>
         </section>
-
         <footer class="bg-light py-5">
             <div class="d-flex justify-content-evenly">
                 <div class="small text-center text-muted">Copyright &copy; 2021 - KUT Cinéma</div>

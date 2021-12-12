@@ -58,7 +58,7 @@ else{
                 if (isset($_SESSION['id_client'])){
                     echo "<li class='nav-item'><a class='nav-link' href='../compte/modification.php'>Bienvenue ".$_SESSION['prenom']. "</a></li>
                                   <li class='nav-item'><a class='nav-link' href='../reservation/historique_reservation.php'>Reservation</a></li>
-                                  <li class='nav-item'><a class='nav-link' href='../compte/deconnexionDB.php'>Déconnexion</a></li>";
+                                  <li class='nav-item'><a class='nav-link' href='../compte/deconnexion_DB.php'>Déconnexion</a></li>";
                 }else{
                     echo "<li class='nav-item'><a class='nav-link' href='../compte/inscription.html'>Inscription</a></li>
                                   <li class='nav-item'><a class='nav-link' href='../compte/connexion.html'>Connexion</a></li>";
