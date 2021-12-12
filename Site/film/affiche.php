@@ -69,7 +69,7 @@ else{
 </nav>
 <!-- Masthead-->
 <?php
-if (isset($res['id_film'])){
+if (isset($_SESSION['id_film'])){
     echo " <header class='masthead' 
     padding-top: 10rem; 
      padding-bottom: calc(10rem - 4.5rem);
@@ -82,10 +82,10 @@ if (isset($res['id_film'])){
     <div class="container px-4 px-lg-5 h-100">
         <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content text-center">
                 <?php
-                            if (isset($res['id_film'])){
+                            if (isset($_SESSION['id_film'])){
                                 echo "<div class='col-lg-4 col-sm-6'>
                                       <a class='portfolio-box' href='/Site/assets/img/affiche/encanto.jpg' title='Encanto'>
-                                      <img class='img-fluidi' src=" . $res['image_link']. " alt='...' /></a>
+                                      <img class='img-fluidi' src=" . $_SESSION['image_link']. " alt='...' /></a>
                                       </div>";
                                 }?>
 
@@ -99,18 +99,17 @@ if (isset($res['id_film'])){
         <div class="row gx-4 gx-lg-5 justify-content">
             <div class="col-lg-6 col-md-9 text">
                 <?php
-                if (isset($res['id_film'])){
-                    echo "<p class= 'text-white-75 mb-3'>Genre : " . $res['genre']. "</br>
+                if (isset($_SESSION['id_film'])){
+                    echo "<p class= 'text-white-75 mb-3'>Genre : " . $_SESSION['genre']. "</br>
 
-                    Titre original : " . $res['titre']. "</br>
+                    Titre original : " . $_SESSION['titre']. "</br>
 
-                    Date de sortie : " . $res['annee_sortie']. "</br>
+                    Date de sortie : " . $_SESSION['annee_sortie']. "</br>
 
-                    Réalisé par " . $res['realisateur']. "</br>
+                    Réalisé par " . $_SESSION['realisateur']. "</br>
 
                     Durée : " . $_SESSION['duree']. "</br>
-
-                    Avec Camille Timmerman, José Garcia, Juan Arbelaez, Dominique Quesnel, Julián Andrés Ortiz Cardona</p>";
+                    </p>";
                 }?>
                 <form action="../reservation/add_reservation.php" method="post">
                     <input type="submit" class="btn btn-light btn-xl" href="../reservation/reservation.php" value="Achetez vos places">
@@ -120,8 +119,8 @@ if (isset($res['id_film'])){
             <div class="col-lg-6 col-md-9 text">
                 <div class="col-size text-center"><p class="police">Synopsis</p></div>
                 <?php
-                if (isset($res['id_film'])){
-                    echo "<p class='text-white-75 mb-3'>" . $res['description']. "</p>";
+                if (isset($_SESSION['id_film'])){
+                    echo "<p class='text-white-75 mb-3'>" . $_SESSION['description']. "</p>";
                 }?>
 
 

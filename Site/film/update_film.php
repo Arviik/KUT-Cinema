@@ -91,14 +91,14 @@
                             <div class="form-floating mb-3">
                                 <div>
                                     <label for="image_link">Sélectionner l'image de l'affiche à envoyer</label>
-                                    <input class="form-control" type="file" id="image_link" name="image_link" multiple accept=".jpg, .jpeg, .png">
+                                    <input class="form-control" type="file" id="image_link" name="image_link" value="<?php echo $res1["image_link"] ?>" multiple accept=".jpg, .jpeg, .png">
                                 </div>
 
                             </div>
                             <div class="form-floating mb-3">
                                 <div>
                                     <label for="image_bg">Sélectionner l'image de fond à envoyer</label>
-                                    <input class="form-control" type="file" id="image_bg" name="image_bg" multiple accept=".jpg, .jpeg, .png">
+                                    <input class="form-control" type="file" id="image_bg" name="image_bg" value="<?php echo $res1['image_bg'] ?>" multiple accept=".jpg, .jpeg, .png">
                                 </div>
                                 <div>
                                 </div>
