@@ -66,6 +66,12 @@
                                     "id_film"=>$val['ref_film'],
                             ));
                             $res2 = $req->fetch();
+
+                            $req = $bdd->prepare('SELECT sum(nb_place_reservation) FROM reservation WHERE ref_salle = :ref_salle');
+                            $req->execute(array(
+                                "ref_salle"=>$val['id_salle'],
+                            ));
+                            $res3 = $req->fetch();
                             echo "
                                 <div class='col'>
                                     <div class='card'>
@@ -78,7 +84,7 @@
                                                     </td>
                                                     <td style='width: 65%;'>
                                                         <h5 class='m-0'>".$val['nom']."</h5>
-                                                        <p class='small m-0'>Place : ".$val['nb_place_salle']."</p>
+                                                        <p class='small m-0'>Place : ".$res3['sum(nb_place_reservation)'].' / '.$val['nb_place_salle']."</p>
                                                         <div class='d-grid gap-2 d-md-flex'>
                                                             <a class='btn btn-primary btn-sm' role='button' style='width: 48%;' href='update_salle.php?id_salle=".$val['id_salle']."'>Modifier</a>
                                                             <a class='btn btn-primary btn-sm' role='button' style='width: 48%;' href='delete_salle_DB.php?id_salle=".$val['id_salle']."'>Supprimer</a>
