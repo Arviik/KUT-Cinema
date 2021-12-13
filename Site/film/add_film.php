@@ -45,50 +45,50 @@
                     <div class="col-lg-6">
                         <form action="add_film_DB.php" method="post" enctype="multipart/form-data">
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="titre" type="text" placeholder="Titre" data-sb-validations="required" name="titre" />
+                                <input class="form-control" id="titre" type="text" placeholder="Titre" required data-sb-validations="required" name="titre" />
                                 <label for="titre">Titre</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">Le titre est demander</div>
                             </div>
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="annee_sortie" type="text" placeholder="Année de sortie" data-sb-validations="required" name="annee_sortie" />
+                                <input class="form-control" id="annee_sortie" type="text" placeholder="Année de sortie" required data-sb-validations="required" name="annee_sortie" />
                                 <label for="annee_sortie">Année de sortie</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">L'année de sortie est demander</div>
                             </div>
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="duree" type="text" placeholder="Durée" data-sb-validations="required" name="duree" />
+                                <input class="form-control" id="duree" type="text" placeholder="Durée" required data-sb-validations="required" name="duree" />
                                 <label for="duree">Durée</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">La durée est demander</div>
                             </div>
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="genre" type="text" placeholder="Genre" data-sb-validations="required" name="genre" />
+                                <input class="form-control" id="genre" type="text" placeholder="Genre" required data-sb-validations="required" name="genre" />
                                 <label for="genre">Genre</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">Le genre est demander</div>
                             </div>
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="realisateur" type="text" placeholder="Réalisateur" data-sb-validations="required" name="realisateur" />
+                                <input class="form-control" id="realisateur" type="text" placeholder="Réalisateur" required data-sb-validations="required" name="realisateur" />
                                 <label for="realisateur">Réalisateur</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">Le réalisateur est demander</div>
                             </div>
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="acteur" type="text" placeholder="Acteur" data-sb-validations="required" name="acteur" />
+                                <input class="form-control" id="acteur" type="text" placeholder="Acteur" required data-sb-validations="required" name="acteur" />
                                 <label for="acteur">Acteur</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">L'acteur est demander</div>
                             </div>
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="description" type="text" placeholder="Description" data-sb-validations="required" name="description" />
+                                <input class="form-control" id="description" type="text" placeholder="Description" required data-sb-validations="required" name="description" />
                                 <label for="description">Description</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">La description est demander</div>
                             </div>
                             <div class="form-floating mb-3">
                                     <div>
                                         <label for="image_link">Sélectionner l'image à envoyer</label>
-                                        <input class="form-control" type="file" id="image_link" name="image_link" multiple accept=".jpg, .jpeg, .png" >
+                                        <input class="form-control" type="file" id="image_link" required name="image_link" multiple accept=".jpg, .jpeg, .png" >
                                     </div>
                                  </div>
                             <div class="form-floating mb-3">
                                 <div>
                                     <label for="image_bg">Sélectionner l'image de fond à envoyer</label>
-                                    <input class="form-control" type="file" id="image_bg" name="image_bg" multiple accept=".jpg, .jpeg, .png">
+                                    <input class="form-control" type="file" id="image_bg" required name="image_bg" multiple accept=".jpg, .jpeg, .png">
                                 </div>
                             </div>
                             <div class="d-none" id="submitErrorMessage">
