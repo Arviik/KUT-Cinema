@@ -60,7 +60,7 @@
         <img src="../assets/img/ticket.png" alt="ticket" style="width: 1080px">
         <h1 class="police" style="top: 5%;"><u>TICKET KUT CINEMA</u></h1>
         <hr class="divider" style="top: 30px;"/>
-        <img alt="Affiche du film" class="rounded-2" src="<?php echo $res['image_link'] ?>" style="z-index: 5; position:absolute; width: 25%; top: 20%; left: 13%" alt="">
+        <img alt="Affiche du film" class="rounded-2" src="<?php echo $res['image_link'] ?>" style="z-index: 5; position:absolute; width: 25%; top: 20%; left: 13%">
         <table class="table police" style="position: absolute; width: 50%; top: 20%; right: 7%">
             <tr>
                 <td>Film :</td>
