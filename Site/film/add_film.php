@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Ajout Film</title>
-        <link href="../css/styles.css" rel="stylesheet" />
+        <link href="../css/styles.css" rel="stylesheet"/>
         <link rel="icon" type="image/x-icon" href="../assets/img/LogoKUTCinéma.png"/>
     </head>
     <body>
@@ -21,10 +21,10 @@
                             session_start();
                             if (isset($_SESSION['id_client'])){
                                 echo "<li class='nav-item'><a class='nav-link' href='../compte/modification.php'>Bienvenue ".$_SESSION['prenom']. "</a></li>
-                                                      <li class='nav-item'><a class='nav-link' href='../compte/deconnexion_DB.php'>Déconnexion</a></li>";
+                                    <li class='nav-item'><a class='nav-link' href='../compte/deconnexion_DB.php'>Déconnexion</a></li>";
                             }else{
                                 echo "<li class='nav-item'><a class='nav-link' href='../compte/inscription.html'>Inscription</a></li>
-                                                      <li class='nav-item'><a class='nav-link' href='../compte/connexion.html'>Connexion</a></li>";
+                                    <li class='nav-item'><a class='nav-link' href='../compte/connexion.html'>Connexion</a></li>";
                             }
                         ?>
                     </ul>
@@ -36,7 +36,7 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 col-xl-6 text-center">
                         <h2 class="mt-0">Ajouter un film</h2>
-                        <hr class="divider" />
+                        <hr class="divider"/>
                         <p class="text-muted mb-5">Ajouter un film dans la base de donnée</p>
                     </div>
                 </div>
@@ -82,7 +82,6 @@
                                     <div>
                                         <label for="image_link">Sélectionner l'image à envoyer</label>
                                         <input class="form-control" type="file" id="image_link" name="image_link" multiple accept=".jpg, .jpeg, .png" >
-
                                     </div>
                                  </div>
                             <div class="form-floating mb-3">
@@ -90,13 +89,14 @@
                                     <label for="image_bg">Sélectionner l'image de fond à envoyer</label>
                                     <input class="form-control" type="file" id="image_bg" name="image_bg" multiple accept=".jpg, .jpeg, .png">
                                 </div>
-                                <div>
-                                </div>
                             </div>
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <div class="d-grid"><button class="btn btn-primary btn-xl " id="submitButton" type="submit">Ajouter le film</button></div>
+                            <div class="d-none" id="submitErrorMessage">
+                                <div class="text-center text-danger mb-3">Error sending message!</div>
+                            </div>
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-xl " id="submitButton" type="submit">Ajouter le film</button>
+                            </div>
                         </form>
-
                     </div>
                 </div>
                 <div class="row gx-4 gx-lg-5 justify-content-center">

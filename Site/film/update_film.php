@@ -31,7 +31,8 @@
                         <?php
                         if (isset($_SESSION['id_client'])){
                             echo "<li class='nav-item'><a class='nav-link' href='../compte/modification.php'>Bienvenue ".$_SESSION['prenom']. "</a></li>
-                                                              <li class='nav-item'><a class='nav-link' href='../compte/deconnexion_DB.php'>Déconnexion</a></li>";
+                                  <li class='nav-item'><a class='nav-link' href='../reservation/historique_reservation.php'>Mes Réservations</a></li>
+                                  <li class='nav-item'><a class='nav-link' href='../compte/deconnexion_DB.php'>Déconnexion</a></li>";
                         }else{
                             echo "<li class='nav-item'><a class='nav-link' href='../compte/inscription.html'>Inscription</a></li>
                                                               <li class='nav-item'><a class='nav-link' href='../compte/connexion.html'>Connexion</a></li>";
@@ -93,7 +94,6 @@
                                     <label for="image_link">Sélectionner l'image de l'affiche à envoyer</label>
                                     <input class="form-control" type="file" id="image_link" name="image_link" value="<?php echo $res1["image_link"] ?>" multiple accept=".jpg, .jpeg, .png">
                                 </div>
-
                             </div>
                             <div class="form-floating mb-3">
                                 <div>

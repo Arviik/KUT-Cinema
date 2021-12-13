@@ -28,7 +28,7 @@
                     session_start();
                     if (isset($_SESSION['id_client'])){
                         echo "<li class='nav-item'><a class='nav-link' href='../compte/modification.php'>Bienvenue ".$_SESSION['prenom']. "</a></li>
-                                      <li class='nav-item'><a class='nav-link' href='../reservation/historique_reservation.php'>Reservation</a></li>
+                                      <li class='nav-item'><a class='nav-link' href='historique_reservation.php'>Mes Réservations</a></li>
                                       <li class='nav-item'><a class='nav-link' href='../compte/deconnexionDB.php'>Déconnexion</a></li>";
                     }else{
                         echo "<li class='nav-item'><a class='nav-link' href='../compte/inscription.html'>Inscription</a></li>
@@ -55,7 +55,7 @@
         <img src="../assets/img/ticket.png" alt="ticket" style="width: 1080px">
         <p class="police" style="top: 3%; font-size: 2em"><u>TICKET KUT CINEMA</u></p>
         <hr class="divider" style="top: 30px;"/>
-        <img class="rounded-2" src="<?php echo $res['image_link'] ?>" style="z-index: 5; position:absolute; width: 25%; top: 20%; left: 15%">
+        <img class="rounded-2" src="<?php echo $res['image_link'] ?>" style="z-index: 5; position:absolute; width: 25%; top: 20%; left: 15%" alt="">
         <!--<p class="police" style="top: 20%; right: 30%; font-size: 1em"><u>Film :</u></p>
         <p class="police" style="top: 23%; right: 24%; font-size: 1.5em">Encanto</p>
         <p class="police" style="top: 30%; right: 30%; font-size: 1em"><u>Salle :</u></p>

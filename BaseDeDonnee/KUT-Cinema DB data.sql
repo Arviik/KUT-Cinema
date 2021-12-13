@@ -1,3 +1,6 @@
+INSERT INTO client (nom, prenom, mot_de_passe, email)
+VALUES ('Admin','root','admin12345','admin@admin.com');
+
 INSERT INTO tarif (nom, prix_unitaire, description)
 VALUES ('Navigo','11,99€','Ce tarif est accessible au personne possédant une carte Navigo !'),
        ('Étudiant','9,99€','Ce tarif est accessible au étudiant !'),

@@ -36,7 +36,7 @@
                 </div>
                 <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
                     <div class="col-lg-6">
-                        <form action="add_reservation_DB.php" method="post">
+                        <form action="update_reservation_DB.php" method="post">
                             <div class="form-floating mb-3">
                                 <?php
                                     $req = $bdd->prepare('SELECT * FROM salle WHERE ref_film = :ref_film');
@@ -64,13 +64,13 @@
                             <div class="form-floating mb-3">
                                 <div class="d-flex justify-content-lg-around">
                                     <label>Carte bancaire
-                                        <input type="radio" name="moyen_paiement" value="CB">
+                                        <input type="radio" name="moyen_paiement" value="Carte Bancaire">
                                     </label>
                                     <label>PayPal
-                                        <input type="radio" name="moyen_paiement" value="paypal">
+                                        <input type="radio" name="moyen_paiement" value="PayPal">
                                     </label>
                                     <label>Espèces
-                                        <input type="radio" name="moyen_paiement" value="espece">
+                                        <input type="radio" name="moyen_paiement" value="Espèces">
                                     </label>
                                 </div>
                             </div>
@@ -93,15 +93,19 @@
                             <div class="form-floating mb-3">
                                 <select id="nb_place" class="form-select" name="nb_place">
                                     <?php
-                                    for ($i = 1; $i <= 50; $i++) {
-                                        echo "<option value='" . $i . "'>" . $i . "</option>";
-                                    }
+                                        for ($i = 1; $i <= 50; $i++) {
+                                            if ($i == $res1['nb_place_reservation']){
+                                                echo "<option value='".$i."' selected>".$i."</option>";
+                                            }else{
+                                                echo "<option value='".$i."'>".$i."</option>";
+                                            }
+                                        }
                                     ?>
                                 </select>
                                 <label for="nb_place">Nombre de place </label>
                             </div>
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <div class="d-grid"><button class="btn btn-primary btn-xl " id="submitButton" type="submit">Reserver votre place</button></div>
+                            <div class="d-grid"><button class="btn btn-primary btn-xl " id="submitButton" type="submit">Réserver votre place</button></div>
                         </form>
                     </div>
                 </div>
