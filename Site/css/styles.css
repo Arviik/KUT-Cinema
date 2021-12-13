@@ -11580,12 +11580,11 @@ header.masthead h1, header.masthead .h1 {
   width: 100%;
 }
 
-.ticket p{
+.ticket h1{
   position: absolute;
 }
 
 .retour{
-
   opacity: 1;
   animation: btnOpac 2s;
 }
