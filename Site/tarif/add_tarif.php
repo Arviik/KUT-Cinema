@@ -44,17 +44,17 @@
                     <div class="col-lg-6">
                         <form action="add_tarif_DB.php" method="post">
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="nom" type="text" placeholder="Nom" data-sb-validations="required" name="nom" />
+                                <input class="form-control" id="nom" type="text" placeholder="Nom" required data-sb-validations="required" name="nom" />
                                 <label for="nom">Nom</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">Un nom est demander</div>
                             </div>
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="prix" type="text" placeholder="Prix" data-sb-validations="required" name="prix" />
+                                <input class="form-control" id="prix" type="text" placeholder="Prix" required data-sb-validations="required" name="prix" />
                                 <label for="prix">Prix unitaire</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">Un prix est demander</div>
                             </div>
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="description" type="text" placeholder="Description" data-sb-validations="required" name="description" />
+                                <input class="form-control" id="description" type="text" placeholder="Description" required data-sb-validations="required" name="description" />
                                 <label for="description">Description</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">Une description est demander</div>
                             </div>
