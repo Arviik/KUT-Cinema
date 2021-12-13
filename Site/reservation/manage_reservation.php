@@ -68,7 +68,7 @@
                         <?php
                             if (!(isset($res1['0']['id_reservation']))){
                                 echo "<tr>
-                                        <td colspan='8' style='text-align: center'>Aucune reservation</td>
+                                        <td colspan='9' style='text-align: center'>Aucune reservation</td>
                                     </tr>
                                 ";
                             }
