@@ -11515,10 +11515,12 @@ header.masthead h1, header.masthead .h1 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 50%;
+  width: 60%;
   height: 10%;
-  left: 25%;
-  top: 40%;
+  padding: 2%;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
   position: absolute;
   bottom: 0;
   text-align: center;

@@ -18,7 +18,7 @@
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-1" id="mainNavListe">
             <div class="container px-4 px-lg-5">
                 <a href="../index.php">
-                    <img href="index.php" src="../assets/img/LogoKUTCinéma.png" height="75" alt="Logo de KUT cinéma">
+                    <img href="../index.php" src="../assets/img/LogoKUTCinéma.png" height="75" alt="Logo de KUT cinéma">
                 </a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -28,7 +28,7 @@
                         <?php
                         if (isset($_SESSION['id_client'])){
                             echo "<li class='nav-item'><a class='nav-link' href='../compte/modification.php'>Bienvenue " .$_SESSION['prenom']. "</a></li>
-                                <li class='nav-item'><a class='nav-link' href='historique_reservation.php'>Mes Réservations</a></li>
+                                <li class='nav-item'><a class='nav-link' href='../reservation/historique_reservation.php'>Mes réservations</a></li>
                                 <li class='nav-item'><a class='nav-link' href='../compte/deconnexion_DB.php'>Déconnexion</a></li>";
                         }else{
                             echo "<li class='nav-item'><a class='nav-link' href='../compte/inscription.html'>Inscription</a></li>

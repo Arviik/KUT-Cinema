@@ -22,7 +22,7 @@
                     <?php
                     if (isset($_SESSION['id_client'])){
                         echo "<li class='nav-item'><a class='nav-link' href='../compte/modification.php'>Bienvenue ".$_SESSION['prenom']. "</a></li>
-                                  <li class='nav-item'><a class='nav-link' href='historique_reservation.php'>Mes Réservations</a></li>
+                                  <li class='nav-item'><a class='nav-link' href='historique_reservation.php'>Mes réservations</a></li>
                                   <li class='nav-item'><a class='nav-link' href='../compte/deconnexion_DB.php'>Déconnexion</a></li>";
                     }else{
                         echo "<li class='nav-item'><a class='nav-link' href='../compte/inscription.html'>Inscription</a></li>
@@ -46,6 +46,7 @@
                             <td>Salle</td>
                             <td>Nombre Place</td>
                             <td>Tarif</td>
+                            <td>Film</td>
                             <td>Moyen de paiement</td>
                             <td>Date de diffusion</td>
                             <td>Supprimer reservation</td>
@@ -60,13 +61,29 @@
                         ));
                         $res = $req->fetchAll();
                         if (!(isset($res['0']['id_reservation']))){
-                            echo "<tr><td colspan='6' style='text-align: center'>Aucune reservation</td></tr>";
+                            echo "<tr><td colspan='7' style='text-align: center'>Aucune reservation</td></tr>";
                         }
                         foreach ($res as $reservation){
+                            $reqsalle = $bdd->prepare('SELECT * FROM salle WHERE id_salle=:ref_salle');
+                            $reqsalle->execute(array(
+                                "ref_salle"=>$reservation['ref_salle']
+                            ));
+                            $ressalle = $reqsalle->fetch();
+                            $reqfilm = $bdd->prepare('SELECT * FROM film WHERE id_film=:ref_film');
+                            $reqfilm->execute(array(
+                                "ref_film"=>$ressalle['ref_film']
+                            ));
+                            $resfilm = $reqfilm->fetch();
+                            $reqtarif = $bdd->prepare('SELECT * FROM tarif WHERE id_tarif=:ref_tarif');
+                            $reqtarif->execute(array(
+                                "ref_tarif"=>$reservation['ref_tarif']
+                            ));
+                            $restarif = $reqtarif->fetch();
                             echo "<tr style='text-align: center'>
-                                    <td>".$reservation['ref_salle']."</td>
+                                    <td>".$ressalle['nom']."</td>
                                     <td>".$reservation['nb_place_reservation']."</td>
-                                    <td>".$reservation['ref_tarif']."</td>
+                                    <td>".$restarif['nom']."</td>
+                                    <td>".$resfilm['titre']."</td>
                                     <td>".$reservation['moyen_paiement']."</td>
                                     <td>".$reservation['date_reservation']."</td>
                                     <td>
