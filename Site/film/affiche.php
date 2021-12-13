@@ -81,6 +81,7 @@ if (isset($_SESSION['id_film'])){
 }?>
     <div class="container px-4 px-lg-5 h-100">
         <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content text-center">
+            <div class="col">
                 <?php
                             if (isset($_SESSION['id_film'])){
                                 echo "<div class='col-lg-4 col-sm-6'>
@@ -89,9 +90,13 @@ if (isset($_SESSION['id_film'])){
                                       </div>";
                                 }?>
 
-
+            </div>
+            <div class="col"><?php
+                    if (isset($_SESSION['id_film'])){
+                        echo "<h1 style='color:white;'> " . $_SESSION['titre']. "</h1></br>
+                        <p style='color:white;' class='police'> Durée : " . $_SESSION['duree']. "</p> ";
+                    }?></div>
         </div>
-
         </div>
 <!-- About-->
 <section class="page-section bg-primary" id="about">
@@ -100,15 +105,17 @@ if (isset($_SESSION['id_film'])){
             <div class="col-lg-6 col-md-9 text">
                 <?php
                 if (isset($_SESSION['id_film'])){
-                    echo "<p class= 'text-white-75 mb-3'>Genre : " . $_SESSION['genre']. "</br>
+                    echo "<p class= 'text-white-75 mb-3'>
 
                     Titre original : " . $_SESSION['titre']. "</br>
 
                     Date de sortie : " . $_SESSION['annee_sortie']. "</br>
+                    
+                    Durée : " . $_SESSION['duree']. "</br>
+                    
+                    Genre : " . $_SESSION['genre']. "</br>
 
                     Réalisé par " . $_SESSION['realisateur']. "</br>
-
-                    Durée : " . $_SESSION['duree']. "</br>
                     </p>";
                 }?>
                 <form action="../reservation/add_reservation.php" method="post">
