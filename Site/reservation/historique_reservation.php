@@ -61,7 +61,7 @@
                         ));
                         $res = $req->fetchAll();
                         if (!(isset($res['0']['id_reservation']))){
-                            echo "<tr><td colspan='6' style='text-align: center'>Aucune reservation</td></tr>";
+                            echo "<tr><td colspan='7' style='text-align: center'>Aucune reservation</td></tr>";
                         }
                         foreach ($res as $reservation){
                             $reqsalle = $bdd->prepare('SELECT * FROM salle WHERE id_salle=:ref_salle');
