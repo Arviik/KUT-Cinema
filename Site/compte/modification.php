@@ -46,7 +46,7 @@
                                 <div class="invalid-feedback" data-sb-feedback="name:required">Un e-mail est demander</div>
                             </div>
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="mdp" type="password" placeholder="Mot de passe" data-sb-validations="required" name="password" <?php echo "value='".$_SESSION['email']."'"?> />
+                                <input class="form-control" id="mdp" type="password" placeholder="Mot de passe" data-sb-validations="required" name="password" <?php echo "value='".$_SESSION['password']."'"?> />
                                 <label for="mdp">Mot de passe</label>
                                 <div class="invalid-feedback" data-sb-feedback="mdp:required">Mot de passe requis</div>
                             </div>
