@@ -14,5 +14,7 @@
     <orderEntry type="library" name="sb-forms-latest" level="application" />
     <orderEntry type="library" name="bootstrap" level="application" />
     <orderEntry type="library" name="sb-forms-latest" level="application" />
+    <orderEntry type="library" name="bootstrap-icons" level="application" />
+    <orderEntry type="library" name="SimpleLightbox" level="application" />
   </component>
 </module>
