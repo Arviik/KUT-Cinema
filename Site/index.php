@@ -69,7 +69,7 @@
                 <div class="row g-0">
                     <div class="col-lg-3 col-sm-6">
                         <a class="portfolio-box" href="film/affiche.php?id_film=2" title="Encanto">
-                            <img class="img-fluid" src="assets/img/affiche/encanto.jpg" alt="..." />
+                            <img class="img-fluid" src="assets/img/affiche/encanto.jpg" alt="..."/>
                             <div class="portfolio-box-caption rounded">
                                 <div class="project-category text-white-50">FILM</div>
                                 <div class="project-name">Encanto</div>
@@ -78,7 +78,7 @@
                     </div>
                     <div class="col-lg-3 col-sm-6">
                         <a class="portfolio-box" href="film/affiche.php?id_film=3" title="SOS Fantome">
-                            <img class="img-fluid" src="assets/img/affiche/sosfantome.jpg" alt="..." />
+                            <img class="img-fluid" src="assets/img/affiche/sosfantome.jpg" alt="..."/>
                             <div class="portfolio-box-caption rounded">
                                 <div class="project-category text-white-50">FILM</div>
                                 <div class="project-name">SOS Fantome</div>
@@ -86,8 +86,8 @@
                         </a>
                     </div>
                     <div class="col-lg-3 col-sm-6">
-                        <a class="portfolio-box" href=film/affiche.php?id_film=4" title="Project Name">
-                            <img class="img-fluid" src="assets/img/affiche/eternels.jpg" alt="..." />
+                        <a class="portfolio-box" href=film/affiche.php?id_film=4" title="Eternels">
+                            <img class="img-fluid" src="assets/img/affiche/eternels.jpg" alt="..."/>
                             <div class="portfolio-box-caption rounded">
                                 <div class="project-category text-white-50">FILM</div>
                                 <div class="project-name">Eternels</div>
@@ -95,8 +95,8 @@
                         </a>
                     </div>
                     <div class="col-lg-3 col-sm-6">
-                        <a class="portfolio-box" href="film/affiche.php?id_film=5" title="Project Name">
-                            <img class="img-fluid" src="assets/img/affiche/gucci.png" alt="..." />
+                        <a class="portfolio-box" href="film/affiche.php?id_film=5" title="House of gucci">
+                            <img class="img-fluid" src="assets/img/affiche/gucci.png" alt="..."/>
                             <div class="portfolio-box-caption rounded">
                                 <div class="project-category text-white-50">FILM</div>
                                 <div class="project-name">House of gucci</div>
@@ -104,8 +104,8 @@
                         </a>
                     </div>
                     <div class="col-lg-3 col-sm-6">
-                        <a class="portfolio-box" href="film/affiche.php?id_film=6" title="Project Name">
-                            <img class="img-fluid" src="assets/img/affiche/supremes.jpg" alt="..." />
+                        <a class="portfolio-box" href="film/affiche.php?id_film=6" title="Supremes">
+                            <img class="img-fluid" src="assets/img/affiche/supremes.jpg" alt="..."/>
                             <div class="portfolio-box-caption rounded">
                                 <div class="project-category text-white-50">FILM</div>
                                 <div class="project-name">Supremes</div>
@@ -113,8 +113,8 @@
                         </a>
                     </div>
                     <div class="col-lg-3 col-sm-6">
-                        <a class="portfolio-box" href="film/affiche.php?id_film=7" title="Project Name">
-                            <img class="img-fluid" src="assets/img/affiche/venom.jpg" alt="..." />
+                        <a class="portfolio-box" href="film/affiche.php?id_film=7" title="Venom">
+                            <img class="img-fluid" src="assets/img/affiche/venom.jpg" alt="..."/>
                             <div class="portfolio-box-caption rounded">
                                 <div class="project-category text-white-50">FILM</div>
                                 <div class="project-name">Venom</div>
@@ -122,8 +122,8 @@
                         </a>
                     </div>
                     <div class="col-lg-3 col-sm-6">
-                        <a class="portfolio-box" href="film/affiche.php?id_film=8" title="Project Name">
-                            <img class="img-fluid" src="assets/img/affiche/matrix_resurrections.png" alt="..." />
+                        <a class="portfolio-box" href="film/affiche.php?id_film=8" title="Matrix Resurrections">
+                            <img class="img-fluid" src="assets/img/affiche/matrix_resurrections.png" alt="..."/>
                             <div class="portfolio-box-caption p-3 rounded">
                                 <div class="project-category text-white-50">FILM</div>
                                 <div class="project-name">Matrix Resurrections</div>
@@ -131,8 +131,8 @@
                         </a>
                     </div>
                     <div class="col-lg-3 col-sm-6">
-                        <a class="portfolio-box" href="film/affiche.php?id_film=9" title="Project Name">
-                            <img class="img-fluid" src="assets/img/affiche/clifford.png" alt="..." />
+                        <a class="portfolio-box" href="film/affiche.php?id_film=9" title="Clifford">
+                            <img class="img-fluid" src="assets/img/affiche/clifford.png" alt="..."/>
                             <div class="portfolio-box-caption p-3 rounded">
                                 <div class="project-category text-white-50">FILM</div>
                                 <div class="project-name">Clifford</div>
