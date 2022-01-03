@@ -150,7 +150,13 @@
         </section>
         <footer class="bg-light py-5">
             <div class="container px-4 px-lg-5">
-                <a href="index_admin.php" class="small text-muted">Accueil admin </a>
+                <?php
+                if (isset($_SESSION['id_client'])) {
+                    if ($_SESSION['id_client'] == 1) {
+                        echo '<a href="index_admin.php" class="small text-muted">Accueil admin </a>';
+                    }
+                }
+                ?>
                 <div class="small text-center text-muted">Copyright &copy; 2021 - KUT Cinéma</div>
             </div>
         </footer>
