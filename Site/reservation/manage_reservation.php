@@ -13,6 +13,12 @@
         <title>Gestion des Réservations</title>
         <link href="../css/styles.css" rel="stylesheet" />
         <link rel="icon" type="image/x-icon" href="../assets/img/LogoKUTCinéma.png"/>
+        <link rel="stylesheet" type="text/css" href="../DataTables/DataTables-1.11.3/css/jquery.dataTables.min.css"/>
+        <script type="text/javascript" src="../DataTables/DataTables-1.11.3/jquery-3.5.1.js"></script>
+        <script type="text/javascript" src="../DataTables/DataTables-1.11.3/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" class="init">$(document).ready(function() {
+                $('#table_id').DataTable();
+            } );</script>
     </head>
     <body id="page-top">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-1" id="mainNavListe">
@@ -50,19 +56,19 @@
                 </div>
             </div>
             <div class="justify-content-center me-5 ms-5">
-                <table class="table table-bordered ">
+                <table id="table_id" class="table table-bordered display">
                     <thead>
-                    <tr style="text-align: center">
-                        <td>Nom du client</td>
-                        <td>Salle</td>
-                        <td>Nombre Place</td>
-                        <td>Tarif</td>
-                        <td>Moyen de paiement</td>
-                        <td>Film réservé</td>
-                        <td>Date de diffusion</td>
-                        <td>Modifier reservation</td>
-                        <td>Supprimer reservation</td>
-                    </tr>
+                        <tr style="text-align: center">
+                            <td>Nom du client</td>
+                            <td>Salle</td>
+                            <td>Nombre Place</td>
+                            <td>Tarif</td>
+                            <td>Moyen de paiement</td>
+                            <td>Film réservé</td>
+                            <td>Date de diffusion</td>
+                            <td>Modifier reservation</td>
+                            <td>Supprimer reservation</td>
+                        </tr>
                     </thead>
                     <tbody>
                         <?php
