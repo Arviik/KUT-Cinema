@@ -1,8 +1,8 @@
 <?php
     $bdd = new PDO('mysql:host=localhost;dbname=kut-cinema;charset=utf8','root','');
-    $req = $bdd->prepare('SELECT * FROM client WHERE nom = :nom AND mot_de_passe = :mdp');
+    $req = $bdd->prepare('SELECT * FROM client WHERE email = :email AND mot_de_passe = :mdp');
     $req->execute(array(
-        "nom"=>$_POST['nom'],
+        "email"=>$_POST['email'],
         "mdp"=>$_POST['password'],
     ));
     $res = $req->fetch();
