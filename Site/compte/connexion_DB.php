@@ -3,7 +3,7 @@
     $req = $bdd->prepare('SELECT * FROM client WHERE email = :email AND mot_de_passe = :mdp');
     $req->execute(array(
         "email"=>$_POST['email'],
-        "mdp"=>$_POST['password'],
+        "mdp"=>sha1($_POST['password']),
     ));
     $res = $req->fetch();
     if ($res){

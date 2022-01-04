@@ -5,7 +5,7 @@ if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
     $req->execute(array(
         "nom"=>$_POST['nom'],
         "prenom"=>$_POST['prenom'],
-        "mot_de_passe"=>$_POST['password'],
+        "mot_de_passe"=>sha1($_POST['password']),
         "email"=>$_POST['email'],
     ));
     header('Location: ../index.php');
