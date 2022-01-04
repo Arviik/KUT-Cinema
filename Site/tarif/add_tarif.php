@@ -1,3 +1,14 @@
+<?php
+session_start();
+if (isset($_SESSION['id_client'])) {
+    if ($_SESSION['id_client'] == 1) {
+
+    }
+    else {
+        header('Location: ../Site/index.php');
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -18,7 +29,6 @@
                         <li class="nav-item"><a class="nav-link" href="../index.php">Accueil</a></li>
                         <li class="nav-item"><a class="nav-link" href="../film/listefilm.php">Films</a></li>
                         <?php
-                        session_start();
                         if (isset($_SESSION['id_client'])){
                             echo "<li class='nav-item'><a class='nav-link' href='../compte/modification.php'>Bienvenue " .$_SESSION['prenom']. "</a></li>
                                     <li class='nav-item'><a class='nav-link' href='../reservation/historique_reservation.php'>Mes réservations</a></li>

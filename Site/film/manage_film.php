@@ -1,5 +1,16 @@
 <?php
-    session_start();
+session_start();
+if (isset($_SESSION['id_client'])) {
+    if ($_SESSION['id_client'] == 1) {
+
+    }
+    else {
+        header('Location: ../Site/index.php');
+    }
+}
+?>
+<?php
+
     $bdd = new PDO('mysql:host=localhost;dbname=kut-cinema;charset=utf8', 'root', '');
     $req = $bdd->prepare('SELECT * FROM film');
     $req->execute();

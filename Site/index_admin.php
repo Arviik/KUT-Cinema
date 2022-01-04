@@ -1,3 +1,14 @@
+<?php
+session_start();
+if (isset($_SESSION['id_client'])) {
+    if ($_SESSION['id_client'] == 1) {
+
+    }
+    else {
+        header('Location: ../Site/index.php');
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="fr" xmlns="http://www.w3.org/1999/html">
     <head>
@@ -14,6 +25,7 @@
         <link href="css/styles.css" rel="stylesheet"/>
     </head>
     <body>
+
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-1" id="mainNavListe">
             <div class="container px-4 px-lg-5">
                 <a href="index.php">
@@ -25,7 +37,6 @@
                         <li class="nav-item"><a class="nav-link" href="index.php">Accueil</a></li>
                         <li class="nav-item"><a class="nav-link" href="film/listefilm.php">Films</a></li>
                         <?php
-                            session_start();
                             if (isset($_SESSION['id_client'])){
                                 echo "<li class='nav-item'><a class='nav-link' href='compte/modification.php'>Bienvenue ".$_SESSION['prenom']. "</a></li>
                                       <li class='nav-item'><a class='nav-link' href='reservation/historique_reservation.php'>Mes réservations</a></li>
